@@ -1,7 +1,7 @@
 // This is a part of Template
 .btn {
   outline: none;
-  border: 1px solid var(--theme-1-100);
+  border: 0.0625rem solid var(--theme-1-100);
   padding: 0.5vh 1vh;
 }
 
@@ -13,22 +13,22 @@
   outline: none;
   border: none;
   appearance: none;
-  padding: 15px 40px;
-  border-radius: 4px;
+  padding: 0.9375rem 2.5rem;
+  border-radius: 0.25rem;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
   cursor: pointer;
   transition: 0.3s ease;
 }
 .register {
   background: #0176fa;
   color: #ffffff;
-  margin-right: 40px;
+  margin-right: 2.5rem;
 }
 .rules {
   box-sizing: border-box;
-  border: 1px solid #0176fa;
+  border: 0.0625rem solid #0176fa;
   background: none;
   color: #0176fa;
 }
@@ -41,24 +41,23 @@
 
 @media screen and (max-width: 768px) {
   .button {
-    padding: 10px 20px;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.0576923px;
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    letter-spacing: 0.00360576875rem;
   }
   .register {
-    margin-right: 19px;
+    margin-right: 1.1875rem;
   }
 }
 
 @media screen and (max-width: 500px) {
   .button {
-    padding: 7px 15px;
-    font-size: 9;
-    line-height: 10px;
-    letter-spacing: 0.0576923px;
+    padding: 0.4375rem 0.9375rem;
+    font-size: 0.5625rem;
+    line-height: 0.625rem;
   }
   .register {
-    margin-right: 13px;
+    margin-right: 0.8125rem;
   }
 }
