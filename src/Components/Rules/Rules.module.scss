@@ -27,6 +27,9 @@
   @media (max-width: 1112px) {
     .rules {
       padding: 0;
+      .rule {
+        padding: 1em 0;
+      }
     }
   }
 }

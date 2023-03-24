@@ -34,8 +34,8 @@ const About = () => {
         </p>
       </div>
       <div className={style.vector}>
-        <img src="/vectors/vector.png" alt="png" />
-        <img src="/vectors/vector.png" alt="png" />
+        <img src="/vectors/Vector.svg" alt="png" />
+        <img src="/vectors/Vector.svg" alt="png" />
       </div>
     </div>
   );
