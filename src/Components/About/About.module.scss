@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3vw 5vw;
+  gap: 1vw;
+  .about {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    .title {
+      text-align: right;
+      padding: 1rem 1rem 1.5rem;
+      h1 {
+        color: var(--gdsc-blue-header);
+        font-weight: 600;
+      }
+    }
+    .content {
+      text-align: justify;
+      padding: 1rem;
+      color: var(--gdsc-text-grey);
+    }
+  }
+}
+
+@media (max-width: 1112px) {
+  .container {
+    padding: 0;
+    flex-direction: column;
+    .about {
+      width: 80%;
+      .title {
+        text-align: center;
+      }
+      .content {
+        padding: 0;
+      }
+    }
+  }
+}
