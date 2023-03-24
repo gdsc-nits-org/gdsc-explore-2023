@@ -1,0 +1,22 @@
+.container {
+  height: fit-content;
+  padding: 3vw 5vw;
+  .title {
+    text-align: center;
+    padding: 1rem 1rem 1.5rem;
+    h1 {
+      color: var(--gdsc-blue-header);
+      font-weight: 600;
+    }
+  }
+  .rules {
+    width: 100%;
+    padding: 1em 0;
+    .rule {
+      width: 83vw;
+      margin: auto;
+      padding: 0.4em 1em;
+      color: var(--gdsc-text-grey);
+    }
+  }
+}
