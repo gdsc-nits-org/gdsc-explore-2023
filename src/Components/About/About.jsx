@@ -14,10 +14,12 @@ const About = () => {
 
   return (
     <div className={style.container}>
-      <Lottie options={options} width={400} />
+      <div className={style.lottie}>
+        <Lottie options={options} width={400} />
+      </div>
       <div className={style.about}>
         <div className={style.title}>
-          <h1>About Explore</h1>
+          <h1>ABOUT EXPLORE</h1>
         </div>
         <p className={style.content}>
           GDSC Explore is the largest developers&#39; fest in the North Eastern India,
@@ -30,6 +32,10 @@ const About = () => {
           and learn by participating in various activities and workshops earning badges
           and certificates along the way.
         </p>
+      </div>
+      <div className={style.vector}>
+        <img src="/vectors/vector.png" alt="png" />
+        <img src="/vectors/vector.png" alt="png" />
       </div>
     </div>
   );

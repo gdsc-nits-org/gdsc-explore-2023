@@ -12,7 +12,6 @@
   .rules {
     width: 100%;
     padding: 1em 0;
-
     .rule {
       width: 83vw;
       margin: auto;
@@ -23,6 +22,11 @@
       .rule {
         width: 80vw;
       }
+    }
+  }
+  @media (max-width: 1112px) {
+    .rules {
+      padding: 0;
     }
   }
 }

@@ -16,7 +16,7 @@ const Rules = () => {
   return (
     <div className={style.container}>
       <div className={style.title}>
-        <h1>Rules and guidelines</h1>
+        <h1>RULES AND GUIDELINES</h1>
       </div>
       <div className={style.rules}>
         {rules.map((rule, index) => {
