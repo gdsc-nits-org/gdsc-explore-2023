@@ -12,11 +12,17 @@
   .rules {
     width: 100%;
     padding: 1em 0;
+
     .rule {
       width: 83vw;
       margin: auto;
       padding: 0.4em 1em;
       color: var(--gdsc-text-grey);
+    }
+    @media (min-width: 1500px) {
+      .rule {
+        width: 80vw;
+      }
     }
   }
 }
