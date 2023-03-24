@@ -1,8 +1,14 @@
-import styles from "./Button.module.scss";
+import style from "./Button.module.scss";
 
-const Button = ({ type }) => {
+const Button = ({ type, content }) => {
+  if (type === "register") {
+    return <button className={`${style.button} ${style.register}`}>{content}</button>;
+  }
+  if (type === "rules") {
+    return <button className={`${style.button} ${style.rules}`}>{content}</button>;
+  }
   return (
-    <button type={type} className={`${styles.btn} ${styles["btn-large"]}`}>
+    <button type={type} className={`${style.btn} ${style["btn-large"]}`}>
       Button
     </button>
   );

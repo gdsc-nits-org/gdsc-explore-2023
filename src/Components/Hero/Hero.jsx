@@ -3,6 +3,7 @@ import Lottie from "react-lottie";
 import Typewriter from "typewriter-effect";
 import exploreAnimationData from "./lottie/explore-anime.json";
 import scrollAnimationData from "./lottie/scroll.json";
+import Button from "../Button/Button";
 import style from "./Hero.module.scss";
 
 const Hero = () => {
@@ -61,10 +62,8 @@ const Hero = () => {
             From 6th April to 8th April
           </p>
           <div>
-            <button className={`${style.button} ${style.register}`}>Register</button>
-            <button className={`${style.button} ${style.rules}`}>
-              Rules and Regulations
-            </button>
+            <Button type="register" content="Register" />
+            <Button type="rules" content="Rules and Regulations" />
           </div>
         </div>
         <div className={style.right}>
