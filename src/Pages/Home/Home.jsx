@@ -1,12 +1,11 @@
-import { Button } from "../../Components";
+import Hero from "../../Components/Hero/Hero";
 
 import style from "./Home.module.scss";
 
 const Home = () => {
   return (
     <main className={style.home}>
-      <h1>Home Page</h1>
-      <Button type="button" />
+      <Hero />
     </main>
   );
 };
