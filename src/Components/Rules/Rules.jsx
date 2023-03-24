@@ -21,7 +21,7 @@ const Rules = () => {
       <div className={style.rules}>
         {rules.map((rule, index) => {
           return (
-            <div className={style.rule}>
+            <div key={index} className={style.rule}>
               {index + 1}.{rule}
             </div>
           );
