@@ -1,0 +1,68 @@
+.main {
+  font-family: var(--gdsc-font-1);
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+
+  .heading {
+    color: #355385;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+}
+.box {
+  display: flex;
+  place-content: center;
+  padding: 3rem 0;
+  flex-wrap: wrap;
+
+  // grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  .card {
+    border-radius: 6px;
+    width: 14rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+
+    margin: 0.5rem;
+    aspect-ratio: 240/433;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media screen and (max-width: 650px) {
+      width: 10rem;
+
+      aspect-ratio: 150/88.5;
+      border-radius: 1px;
+    }
+  }
+
+  .rg {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: white;
+
+    @media screen and (max-width: 650px) {
+      font-size: 0.5rem;
+    }
+
+    .registerBtn {
+      margin: 1rem 0;
+      width: 7rem;
+      aspect-ratio: 97/37;
+      font-size: 0.7rem;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      background-color: #0176fa;
+
+      a {
+        text-decoration: none;
+        &:visited {
+          color: white;
+        }
+      }
+    }
+  }
+}
