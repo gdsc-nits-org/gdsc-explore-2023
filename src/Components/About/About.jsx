@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Lottie from "react-lottie";
 import style from "./About.module.scss";
 
-const About = () => {
+const About = ({ aboutRef }) => {
   const [aboutLottie, setAboutLottie] = useState("");
   useEffect(() => {
     fetch("/lotties/aboutLottie.json")
@@ -24,7 +24,7 @@ const About = () => {
   };
 
   return (
-    <div className={style.container}>
+    <div className={style.container} ref={aboutRef}>
       <div className={style.lottie}>
         {aboutLottie ? (
           <Lottie options={options} width={400} />

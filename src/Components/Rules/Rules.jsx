@@ -1,6 +1,6 @@
 import style from "./Rules.module.scss";
 
-const Rules = () => {
+const Rules = ({ rulesRef }) => {
   const rules = [
     " fklkad Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis.",
     " fklkad Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis.",
@@ -14,7 +14,7 @@ const Rules = () => {
     " fklkad Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis.",
   ];
   return (
-    <div className={style.container}>
+    <div className={style.container} ref={rulesRef}>
       <div className={style.title}>
         <h1>RULES AND GUIDELINES</h1>
       </div>

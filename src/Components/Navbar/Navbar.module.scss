@@ -7,7 +7,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 7%;
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 999;
 
   .brand {
@@ -19,6 +20,8 @@
       width: 5.5rem;
     }
     h2 {
+      padding-left: 0.5em;
+      font-weight: 600;
       color: #505050;
     }
   }
@@ -35,7 +38,6 @@
     }
   }
 
-  //label{}
   ul {
     display: flex;
     align-items: center;
@@ -44,13 +46,16 @@
       list-style: none;
       line-height: 1.875rem;
       margin: 0 1.25rem;
-      a {
+      button {
+        background: none;
+        border: none;
         color: #505050;
         font-size: 1.0625rem;
         font-weight: 500;
         text-decoration: none;
+        cursor: pointer;
       }
-      a:hover {
+      button:hover {
         color: #547dbf;
         transition: 0.3s;
       }
@@ -94,7 +99,6 @@
 }
 @media screen and (max-width: 768px) {
   .navbar {
-    height: 2.5rem;
     padding-top: 0.3125rem;
     .brand {
       .img {

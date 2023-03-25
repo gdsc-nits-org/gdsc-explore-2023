@@ -1,47 +1,47 @@
-.green {
-  color: #30a953;
-}
-.red {
-  color: #eb4335;
-}
-.yellow {
-  color: #fbbc12;
-}
-.blue {
-  color: var(--gdsc-blue-3-100);
-}
 .hero {
+  height: calc(100vh - 4.375rem);
   display: flex;
-  justify-content: space-between;
-  padding: 0 4.375rem;
+  justify-content: center;
+  align-items: center;
+  padding: 3vw 0;
+  gap: 3vw;
+  position: relative;
   .left {
-    padding-top: 3.125rem;
+    padding: 1rem;
     h1 {
+      padding: 1rem;
       font-weight: 600;
       font-size: 4rem;
       line-height: 6rem;
-      margin-top: 7.5rem;
       color: #343434;
+      user-select: none;
     }
     h2 {
       font-weight: 400;
       font-size: 1.75rem;
       line-height: 3rem;
       letter-spacing: 0.015625rem;
-      margin-top: 1.25rem;
+      padding: 1rem;
     }
     p {
       display: flex;
       align-items: center;
-      margin-top: 1.875rem;
+      padding: 2rem 1rem 4rem;
       letter-spacing: 0.009721125rem;
       img {
         margin-right: 1.25rem;
       }
     }
-    div {
-      margin-top: 4.375rem;
+    .btn {
+      padding: 1rem;
     }
+  }
+  .scrollbtn {
+    position: absolute;
+    background: none;
+    border: none;
+    bottom: 1vw;
+    cursor: pointer;
   }
 }
 .fadeIn1 {
@@ -61,107 +61,42 @@
 .fadeIn2.show2 {
   opacity: 1;
   transform: translateY(0);
+  padding: 0.5rem;
 }
 
-@media screen and (max-width: 1213px) {
+@media (max-width: 1112px) {
   .hero {
-    .left {
-      h1 {
-        font-size: 3.5rem;
-      }
-      h2 {
-        font-size: 1.5rem;
-      }
-      div {
-        .register {
-          margin-bottom: 1.875rem;
-        }
-      }
-    }
-  }
-}
-@media screen and (max-width: 1100px) {
-  .hero {
-    .right {
-      padding-top: 6.25rem;
-    }
-  }
-}
-@media screen and (max-width: 992px) {
-  .hero {
-    flex-direction: column;
-
+    padding: 0;
     .right {
       display: none;
     }
   }
 }
-@media screen and (max-width: 768px) {
+
+@media (max-width: 602px) {
   .hero {
-    padding-top: 4.375rem;
-    padding-left: 2.1875rem;
     .left {
-      padding-top: 0;
       h1 {
-        font-weight: 500;
-        font-size: 2.9375rem;
-        line-height: 3.5rem;
-        margin-top: 0;
-      }
-      h2 {
-        font-weight: 400;
-        font-size: 1.75rem;
-        line-height: 2.5rem;
-        margin-top: 0.75rem;
+        font-size: 3rem;
       }
       p {
-        font-weight: 400;
-        font-size: 1.125rem;
-        line-height: 1.5625rem;
-        margin-top: 0.625rem;
-        img {
-          width: 1.125rem;
-          margin-right: 0.625rem;
-        }
+        padding-bottom: 2rem;
       }
-      div {
-        margin-top: 1.25rem;
-        margin-bottom: 1.875rem;
-      }
+    }
+    .scrollbtn {
+      bottom: 5vh;
     }
   }
 }
-@media screen and (max-width: 500px) {
+@media (max-width: 385px) {
   .hero {
-    padding-top: 4.375rem;
-    padding-left: 0.9375rem;
+    padding: 0;
     .left {
-      padding-top: 0;
       h1 {
-        font-weight: 500;
-        font-size: 1.6875rem;
-        line-height: 2.25rem;
-        margin-top: 0;
-      }
-      h2 {
-        font-weight: 400;
-        font-size: 0.8125rem;
-        line-height: 1.25rem;
-        margin-top: 0.75rem;
+        padding: 0;
       }
       p {
-        font-weight: 400;
-        font-size: 0.8125rem;
-        line-height: 1.25rem;
-        margin-top: 0.125rem;
-        img {
-          width: 0.875rem;
-          margin-right: 0.9375rem;
-        }
-      }
-      div {
-        margin-top: 1.25rem;
-        margin-bottom: 0.625rem;
+        padding: 0 1rem;
       }
     }
   }

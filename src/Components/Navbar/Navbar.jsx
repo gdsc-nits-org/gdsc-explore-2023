@@ -3,23 +3,22 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import Lottie from "react-lottie";
 import style from "./Navbar.module.scss";
 
-const Navbar = () => {
+const Navbar = ({ aboutRef }) => {
   const [animationData, setAnimationData] = useState();
-  const getData = () => {
-    fetch("lottie/explore-anime.json")
+
+  useEffect(() => {
+    fetch("lotties/explore-anime.json")
       .then((response) => {
         return response.json();
       })
       .then((data) => {
         setAnimationData(data);
       })
-      .catch((error) => {
-        console.log(error);
+      .catch(() => {
+        setAnimationData(null);
       });
-  };
-  useEffect(() => {
-    getData();
   }, []);
+
   const [isClicked, setIsClicked] = useState(false);
 
   const toggleClicked = () => {
@@ -46,20 +45,26 @@ const Navbar = () => {
       </div>
       <ul className={isClicked ? style.activelinks : ``}>
         <li>
-          <a href="#hero">Home</a>
+          <button
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
+          >
+            Home
+          </button>
         </li>
         <li>
-          <a href="#about">About</a>
+          <button
+            onClick={() => {
+              aboutRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+            }}
+          >
+            About
+          </button>
         </li>
-        {/* <li>
-          <a href="#sponsors">Sponsors</a>
-        </li>
-        <li>
-          <a href="#speakers">Speakers</a>
-        </li>
-        <li>
-          <a href="#team">Team</a>
-        </li> */}
       </ul>
       <div
         className={isClicked ? `${style.hamburger} ${style.active}` : style.hamburger}

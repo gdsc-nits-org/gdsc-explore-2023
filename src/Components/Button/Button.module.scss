@@ -2,29 +2,22 @@
 .btn {
   outline: none;
   border: 0.0625rem solid var(--theme-1-100);
-  padding: 0.5vh 1vh;
 }
-
-.btn-large {
-  width: 20vw;
-}
-
 .button {
   outline: none;
   border: none;
-  appearance: none;
   padding: 0.9375rem 2.5rem;
   border-radius: 0.25rem;
   font-weight: 400;
   font-size: 1.125rem;
-  line-height: 1.125rem;
   cursor: pointer;
   transition: 0.3s ease;
+  margin: 1vw 0;
 }
 .register {
   background: #0176fa;
   color: #ffffff;
-  margin-right: 2.5rem;
+  margin-right: 2vw;
 }
 .rules {
   box-sizing: border-box;
@@ -39,36 +32,12 @@
   background-color: #e4eefc;
 }
 
-@media screen and (max-width: 1268px) {
+@media (max-width: 600px) {
   .button {
     padding: 0.725rem 2rem;
     font-size: 0.875rem;
-    line-height: 1rem;
-    letter-spacing: 0.00360576875rem;
   }
   .register {
-    margin-right: 1.1875rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .button {
-    padding: 0.625rem 1.25rem;
-    font-size: 0.875rem;
-    line-height: 1rem;
-    letter-spacing: 0.00360576875rem;
-  }
-  .register {
-    margin-right: 1.1875rem;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .button {
-    padding: 0.4375rem 0.9375rem;
-    font-size: 0.5625rem;
-    line-height: 0.625rem;
-  }
-  .register {
-    margin-right: 0.8125rem;
+    margin-right: 1rem;
   }
 }

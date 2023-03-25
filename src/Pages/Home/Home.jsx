@@ -3,12 +3,12 @@ import { About, Rules } from "../../Components";
 
 import style from "./Home.module.scss";
 
-const Home = () => {
+const Home = ({ aboutRef, rulesRef }) => {
   return (
     <main className={style.home}>
-      <Hero />
-      <About />
-      <Rules />
+      <Hero rulesRef={rulesRef} />
+      <About aboutRef={aboutRef} />
+      <Rules rulesRef={rulesRef} />
     </main>
   );
 };

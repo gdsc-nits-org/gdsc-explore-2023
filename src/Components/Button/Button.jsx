@@ -1,10 +1,17 @@
 import style from "./Button.module.scss";
 
-const Button = (props) => {
-  return props.type === "primary" ? (
-    <button className={`${style.button} ${style.register}`}>{props.content}</button>
+const Button = ({ type, children, rulesRef }) => {
+  return type === "primary" ? (
+    <button className={`${style.button} ${style.register}`}>{children}</button>
   ) : (
-    <button className={`${style.button} ${style.rules}`}>{props.content}</button>
+    <button
+      className={`${style.button} ${style.rules}`}
+      onClick={() =>
+        rulesRef.current.scrollIntoView({ behavior: "smooth", block: "start" })
+      }
+    >
+      {children}
+    </button>
   );
 };
 
