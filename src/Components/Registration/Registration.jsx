@@ -3,7 +3,7 @@ import college from "../../data/registerLinks.json";
 const Registration = () => {
   return (
     <div className={styles.main}>
-      <h1 className={styles.heading}>REGISTRATIONS</h1>
+      <h1 className={styles.heading}>REGISTRATION</h1>
 
       <div className={styles.box}>
         {college.map((item) => (
