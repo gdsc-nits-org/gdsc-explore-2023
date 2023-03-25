@@ -1,8 +1,19 @@
+import { useState, useEffect } from "react";
 import Lottie from "react-lottie";
-import aboutLottie from "./aboutLottie.json";
 import style from "./About.module.scss";
 
 const About = () => {
+  const [aboutLottie, setAboutLottie] = useState("");
+  useEffect(() => {
+    fetch("/lotties/aboutLottie.json")
+      .then((response) => response.json())
+      .then((data) => {
+        setAboutLottie(data);
+      })
+      .catch(() => {
+        setAboutLottie(null);
+      });
+  }, []);
   const options = {
     loop: true,
     autoplay: true,
@@ -15,7 +26,11 @@ const About = () => {
   return (
     <div className={style.container}>
       <div className={style.lottie}>
-        <Lottie options={options} width={400} />
+        {aboutLottie ? (
+          <Lottie options={options} width={400} />
+        ) : (
+          <img src="#" alt="img" />
+        )}
       </div>
       <div className={style.about}>
         <div className={style.title}>
