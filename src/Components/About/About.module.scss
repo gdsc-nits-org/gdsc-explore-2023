@@ -13,6 +13,8 @@
       text-align: right;
       padding: 1rem 1rem 1.5rem;
       h1 {
+        font-family: var(--gdsc-font-1);
+        font-size: var(--gdsc-explore-heading-size-desktop);
         color: var(--gdsc-blue-header);
         font-weight: 600;
       }
@@ -40,7 +42,7 @@
   }
 }
 
-@media (max-width: 1112px) {
+@media (max-width: 1024px) {
   .container {
     padding: 0;
     flex-direction: column;
@@ -61,6 +63,20 @@
       bottom: -8vw;
       img {
         width: 4rem;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+  .container {
+    .about {
+      .title {
+        h1 {
+          font-size: var(--gdsc-explore-heading-size-mobile);
+        }
       }
     }
   }

@@ -1,5 +1,6 @@
 import style from "./Rules.module.scss";
 
+
 const Rules = ({ rulesRef }) => {
   const rules = [
     " fklkad Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis.",

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Lottie from "react-lottie";
 import style from "./About.module.scss";
 
+
 const About = ({ aboutRef }) => {
   const [aboutLottie, setAboutLottie] = useState("");
   useEffect(() => {
@@ -49,8 +50,8 @@ const About = ({ aboutRef }) => {
         </p>
       </div>
       <div className={style.vector}>
-        <img src="/vectors/Vector.svg" alt="png" />
-        <img src="/vectors/Vector.svg" alt="png" />
+        <img src="/assets/images/vector.svg" alt="png" />
+        <img src="/assets/images/vector.svg" alt="png" />
       </div>
     </div>
   );

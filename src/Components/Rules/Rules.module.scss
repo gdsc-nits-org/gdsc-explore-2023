@@ -5,8 +5,10 @@
     text-align: center;
     padding: 1rem 1rem 1.5rem;
     h1 {
-      color: var(--gdsc-blue-header);
+      font-family: var(--gdsc-font-1);
+      font-size: var(--gdsc-explore-heading-size-desktop);
       font-weight: 600;
+      color: var(--gdsc-blue-header);
     }
   }
   .rules {
@@ -24,11 +26,24 @@
       }
     }
   }
-  @media (max-width: 1112px) {
-    .rules {
-      padding: 0;
-      .rule {
-        padding: 1em 0;
+
+@media (max-width: 1024px) {
+  .rules {
+    padding: 0;
+    .rule {
+      padding: 1em 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    .title {
+      h1 {
+        font-size: var(--gdsc-explore-heading-size-mobile);
       }
     }
   }

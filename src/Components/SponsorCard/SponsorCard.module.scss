@@ -1,0 +1,39 @@
+.card {
+  display: inline-block;
+  margin: 1rem 2rem;
+  padding: 2.5rem 0;
+  width: 20%;
+  box-shadow: 0.125rem 0.125rem 0.95rem var(--gdsc-shadow-1-80);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.01);
+    transition: all 0.6s;
+    box-shadow: 0.125rem 0.125rem 0.95rem var(--gdsc-shadow-1-100);
+  }
+  .sponsor-img {
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 70%;
+    margin: 0.5rem 0;
+    padding: 1.5rem 0;
+  }
+}
