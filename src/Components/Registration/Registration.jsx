@@ -12,6 +12,7 @@ const Registration = () => {
             key={item.id}
             className={styles.card}
           >
+            <div className={styles.tint}></div>
             <div className={styles.rg}>
               <p>{item.heading}</p>
               {/* <button className={styles.registerBtn}> <a href={item.link}>REGISTER HERE</a></button> */}
