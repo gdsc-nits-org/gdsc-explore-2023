@@ -54,7 +54,8 @@ const Hero = () => {
 
   // Responsive Lottie size
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const initialExploreLottieSize = 600;
+  const initialExploreLottieSize =
+    windowWidth >= 1100 && windowWidth <= 1250 ? 500 : windowWidth < 1100 ? 400 : 600;
   const [exploreLottieSize, setExploreLottieSize] = useState(initialExploreLottieSize);
   const initialScrollLottieSize = windowWidth <= 768 ? 25 : 64;
   const [scrollLottieSize, setScrollLottieSize] = useState(initialScrollLottieSize);
@@ -62,10 +63,10 @@ const Hero = () => {
     setWindowWidth(window.innerWidth);
     const currentSize = windowWidth <= 768 ? 25 : 64;
     setScrollLottieSize(currentSize);
-    if (windowWidth >= 1100 && windowWidth <= 1213) {
+    if (windowWidth >= 1100 && windowWidth <= 1250) {
       setExploreLottieSize(500);
     } else if (windowWidth < 1100) {
-      setExploreLottieSize(300);
+      setExploreLottieSize(400);
     } else {
       setExploreLottieSize(600);
     }
