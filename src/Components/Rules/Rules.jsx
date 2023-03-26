@@ -1,28 +1,17 @@
 import style from "./Rules.module.scss";
+import rules from "../../Assets/Rules.json";
 
-const Rules = () => {
-  const rules = [
-    " fklkad Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis.",
-    " fklkad Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis.",
-    " fklkad Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis.",
-    " fklkad Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis.",
-    " fklkad Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis.",
-    " fklkad Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis.",
-    " fklkad Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis.",
-    " fklkad Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis.",
-    " fklkad Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis.",
-    " fklkad Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis ulputate libero et velit interdum, ac aliquet odio mattis.",
-  ];
+const Rules = ({ rulesRef }) => {
   return (
-    <div className={style.container}>
+    <div className={style.container} ref={rulesRef}>
       <div className={style.title}>
         <h1>RULES AND GUIDELINES</h1>
       </div>
       <div className={style.rules}>
-        {rules.map((rule, index) => {
+        {rules.map(({ id, rule }) => {
           return (
-            <div key={index} className={style.rule}>
-              {index + 1}.{rule}
+            <div key={id} className={style.rule}>
+              {id}.{rule}
             </div>
           );
         })}
