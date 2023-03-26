@@ -43,6 +43,9 @@
 
       aspect-ratio: 150/88.5;
       border-radius: 1px;
+      .tint {
+        border-radius: 1px;
+      }
     }
   }
 
@@ -54,7 +57,7 @@
     z-index: 10;
 
     @media screen and (max-width: 650px) {
-      font-size: 0.5rem;
+      font-size: 0.6rem;
     }
 
     // .registerBtn {
