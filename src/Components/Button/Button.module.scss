@@ -13,23 +13,22 @@
   cursor: pointer;
   transition: 0.3s ease;
   margin: 1vw 0;
-}
-.register {
-  background: #0176fa;
-  color: #ffffff;
-  margin-right: 2vw;
-}
-.rules {
   box-sizing: border-box;
   border: 0.0625rem solid #0176fa;
   background: none;
   color: #0176fa;
+  &:hover {
+    background-color: #e4eefc;
+  }
 }
-.register:hover {
+.primary {
+  background: #0176fa;
+  color: #ffffff;
+  margin-right: 2vw;
+}
+
+.primary:hover {
   background-color: #1765cc;
-}
-.rules:hover {
-  background-color: #e4eefc;
 }
 
 @media (max-width: 600px) {

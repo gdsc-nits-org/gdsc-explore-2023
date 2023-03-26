@@ -1,14 +1,10 @@
 import style from "./Button.module.scss";
 
-const Button = ({ type, children, rulesRef }) => {
-  return type === "primary" ? (
-    <button className={`${style.button} ${style.register}`}>{children}</button>
-  ) : (
+const Button = ({ primary, children, onClick }) => {
+  return (
     <button
-      className={`${style.button} ${style.rules}`}
-      onClick={() =>
-        rulesRef.current.scrollIntoView({ behavior: "smooth", block: "start" })
-      }
+      className={`${primary ? style.primary : ""} ${style.button} ${style.register}`}
+      onClick={() => onClick()}
     >
       {children}
     </button>

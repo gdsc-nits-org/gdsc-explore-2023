@@ -60,8 +60,12 @@ const Hero = ({ rulesRef }) => {
           From 6th April to 8th April
         </p>
         <div className={`${style.fadeIn2} ${style.show2}`}>
-          <Button type="primary">Register</Button>
-          <Button type="secondary" rulesRef={rulesRef}>
+          <Button primary>Register</Button>
+          <Button
+            onClick={() =>
+              rulesRef.current.scrollIntoView({ behavior: "smooth", block: "start" })
+            }
+          >
             Rules and Regulations
           </Button>
         </div>
