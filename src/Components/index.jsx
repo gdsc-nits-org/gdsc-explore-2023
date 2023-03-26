@@ -8,6 +8,7 @@ import SponsorCard from "./SponsorCard/SponsorCard";
 import Speaker from "./Speaker/Speaker";
 import SpeakerCard from "./SpeakerCard/SpeakerCard";
 import Registration from "./Registration/Registration";
+import Hero from "./Hero/Hero";
 
 export {
   Button,
@@ -20,4 +21,5 @@ export {
   SponsorCard,
   Speaker,
   SpeakerCard,
+  Hero,
 };

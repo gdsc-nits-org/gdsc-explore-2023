@@ -1,9 +1,12 @@
-import styles from "./Button.module.scss";
+import style from "./Button.module.scss";
 
-const Button = ({ type }) => {
+const Button = ({ primary, children, onClick }) => {
   return (
-    <button type={type} className={`${styles.btn} ${styles["btn-large"]}`}>
-      Button
+    <button
+      className={`${primary ? style.primary : ""} ${style.button} ${style.register}`}
+      onClick={() => onClick()}
+    >
+      {children}
     </button>
   );
 };

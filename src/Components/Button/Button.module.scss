@@ -1,10 +1,42 @@
 // This is a part of Template
 .btn {
   outline: none;
-  border: 1px solid var(--theme-1-100);
-  padding: 0.5vh 1vh;
+  border: 0.0625rem solid var(--theme-1-100);
+}
+.button {
+  outline: none;
+  border: none;
+  padding: 0.9375rem 2.5rem;
+  border-radius: 0.25rem;
+  font-weight: 400;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin: 1vw 0;
+  box-sizing: border-box;
+  border: 0.0625rem solid #0176fa;
+  background: none;
+  color: #0176fa;
+  &:hover {
+    background-color: #e4eefc;
+  }
+}
+.primary {
+  background: #0176fa;
+  color: #ffffff;
+  margin-right: 2vw;
 }
 
-.btn-large {
-  width: 20vw;
+.primary:hover {
+  background-color: #1765cc;
+}
+
+@media (max-width: 600px) {
+  .button {
+    padding: 0.725rem 2rem;
+    font-size: 0.875rem;
+  }
+  .register {
+    margin-right: 1rem;
+  }
 }
