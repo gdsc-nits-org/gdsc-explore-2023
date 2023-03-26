@@ -22,6 +22,7 @@
   --gdsc-line-1-100: #c5c5c5;
   --gdsc-bg-1-100: #dbdbdb;
   --gdsc-neutral-1-100: #605d62;
+  --gdsc-shadow-1-80: rgba(218, 215, 215, 0.8);
   --gdsc-shadow-1-100: rgb(218, 215, 215);
 
   --grey-text-1-100: rgba(101, 108, 115, 1);
@@ -31,6 +32,9 @@
   --heading-2-text-weight: 500;
   --paragraph-1-text-weight: 400;
   --paragraph-2-text-weight: 300;
+
+  --gdsc-explore-heading-size-desktop: 3rem;
+  --gdsc-explore-heading-size-mobile: 2rem;
 }
 
 * {

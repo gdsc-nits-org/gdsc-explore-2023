@@ -1,4 +1,4 @@
-import { About, Rules, Registration } from "../../Components";
+import { About, Rules, Speaker, Sponsor, Registration } from "../../Components";
 
 import style from "./Home.module.scss";
 
@@ -8,6 +8,8 @@ const Home = () => {
       <About />
       <Registration />
       <Rules />
+      <Sponsor />
+      <Speaker />
     </main>
   );
 };
