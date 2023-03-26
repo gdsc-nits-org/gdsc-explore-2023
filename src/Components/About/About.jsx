@@ -49,8 +49,8 @@ const About = ({ aboutRef }) => {
         </p>
       </div>
       <div className={style.vector}>
-        <img src="/vectors/Vector.svg" alt="png" />
-        <img src="/vectors/Vector.svg" alt="png" />
+        <img src="/assets/images/vector.svg" alt="png" />
+        <img src="/assets/images/vector.svg" alt="png" />
       </div>
     </div>
   );

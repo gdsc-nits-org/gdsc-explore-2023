@@ -30,10 +30,12 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.8.0_react@18.2.0
-  react-lottie: 1.2.3_react@18.2.0
   react-router-dom: 6.9.0_biqbaboplfbrettd7655fr4n2y
   typewriter-effect: 2.19.0_biqbaboplfbrettd7655fr4n2y
   vite: 3.2.5_sass@1.60.0
+  react-lottie: 1.2.3_react@18.2.0
+  react-router-dom: 6.4.3_biqbaboplfbrettd7655fr4n2y
+  vite: 3.2.4_sass@1.56.1
 
 devDependencies:
   '@types/react': 18.0.29
@@ -829,6 +831,12 @@ packages:
 
   /convert-source-map/1.9.0:
     resolution: {integrity: sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==}
+    dev: false
+
+  /core-js/2.6.12:
+    resolution: {integrity: sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==}
+    deprecated: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+    requiresBuild: true
     dev: false
 
   /core-js/2.6.12:
@@ -2444,6 +2452,17 @@ packages:
 
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+
+  /react-lottie/1.2.3_react@18.2.0:
+    resolution: {integrity: sha512-qLCERxUr8M+4mm1LU0Ruxw5Y5Fn/OmYkGfnA+JDM/dZb3oKwVAJCjwnjkj9TMHtzR2U6sMEUD3ZZ1RaHagM7kA==}
+    engines: {npm: ^3.0.0}
+    peerDependencies:
+      react: ^0.14.7 || ^15.0.0 || ^16.0.0
+    dependencies:
+      babel-runtime: 6.26.0
+      lottie-web: 5.10.2
+      react: 18.2.0
+    dev: false
 
   /react-lottie/1.2.3_react@18.2.0:
     resolution: {integrity: sha512-qLCERxUr8M+4mm1LU0Ruxw5Y5Fn/OmYkGfnA+JDM/dZb3oKwVAJCjwnjkj9TMHtzR2U6sMEUD3ZZ1RaHagM7kA==}

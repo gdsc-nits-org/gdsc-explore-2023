@@ -59,7 +59,7 @@ const Hero = ({ rulesRef }) => {
         </h1>
         <h2>Explore the Developers from the Northeast</h2>
         <p className={stopped ? style.fadeIn1 : `${style.fadeIn1} ${style.show1}`}>
-          <img src="./images/clock.svg" alt="timer" />
+          <img src="/assets/images/clock.svg" alt="timer" />
           From 6th April to 8th April
         </p>
         <div
