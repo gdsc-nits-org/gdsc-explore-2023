@@ -7,6 +7,7 @@ import Sponsor from "./Sponsor/Sponsor";
 import SponsorCard from "./SponsorCard/SponsorCard";
 import Speaker from "./Speaker/Speaker";
 import SpeakerCard from "./SpeakerCard/SpeakerCard";
+import Hero from "./Hero/Hero";
 
 export {
   Button,
@@ -18,4 +19,5 @@ export {
   SponsorCard,
   Speaker,
   SpeakerCard,
+  Hero,
 };

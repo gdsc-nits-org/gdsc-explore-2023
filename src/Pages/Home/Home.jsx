@@ -1,5 +1,4 @@
-import Hero from "../../Components/Hero/Hero";
-import { About, Rules, Speaker, Sponsor } from "../../Components";
+import { About, Rules, Speaker, Sponsor, Hero } from "../../Components";
 
 import style from "./Home.module.scss";
 
