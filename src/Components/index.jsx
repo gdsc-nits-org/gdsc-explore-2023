@@ -8,6 +8,8 @@ import SponsorCard from "./SponsorCard/SponsorCard";
 import Speaker from "./Speaker/Speaker";
 import SpeakerCard from "./SpeakerCard/SpeakerCard";
 import Hero from "./Hero/Hero";
+import GDSCTeam from "./GDSCTeam/GDSCTeam";
+import GDSCTeamCard from "./GDSCTeamCard/GDSCTeamCard";
 
 export {
   Button,
@@ -20,4 +22,6 @@ export {
   Speaker,
   SpeakerCard,
   Hero,
+  GDSCTeam,
+  GDSCTeamCard,
 };
