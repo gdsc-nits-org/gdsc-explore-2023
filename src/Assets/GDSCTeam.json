@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Assam Engineering College",
+    "img": "/assets/gdsc-team/aec.png",
+    "link": "https://gdsc.community.dev/assam-engineering-college-guwahati/"
+  },
+  {
+    "name": "National Institute of Technology Silchar",
+    "img": "/assets/gdsc-team/nits.png",
+    "link": "https://gdsc.community.dev/national-institute-of-technology-nit-silchar/"
+  },
+  {
+    "name": "National Institute of Technology Agartala",
+    "img": "/assets/gdsc-team/nita.png",
+    "link": "https://gdsc.community.dev/national-institute-of-technology-nit-agartala/"
+  },
+  {
+    "name": "Indian Institute of Information Technology Guwahati",
+    "img": "/assets/gdsc-team/iiitg.png",
+    "link": "https://gdsc.community.dev/indian-institute-of-information-technology-guwahati/"
+  },
+  {
+    "name": "Indian Institute of Technology Guwahati",
+    "img": "/assets/gdsc-team/iitg.png",
+    "link": "https://gdsc.community.dev/indian-institute-of-technology-guwahati/"
+  }
+]

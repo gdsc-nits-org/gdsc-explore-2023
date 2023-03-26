@@ -1,0 +1,36 @@
+.card {
+  width: 25%;
+  margin: 3rem 2rem;
+  cursor: pointer;
+  display: inline-block;
+  &:hover {
+    transform: scale(1.01);
+    transition: all 0.6s;
+  }
+  .link {
+    text-decoration: none;
+  }
+  .card-img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+    margin: 2.5rem 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 40%;
+    margin: 1rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 70%;
+    margin: 1rem 0;
+  }
+}
