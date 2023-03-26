@@ -65,6 +65,12 @@ const Navbar = ({ aboutRef }) => {
             About
           </button>
         </li>
+        <li>
+          <button>Sponsers</button>
+        </li>
+        <li>
+          <button>Speakers</button>
+        </li>
       </ul>
       <div
         className={isClicked ? `${style.hamburger} ${style.active}` : style.hamburger}

@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import Lottie from "react-lottie";
-import Typewriter from "typewriter-effect";
+// import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
+
 import Button from "../Button/Button";
 import style from "./Hero.module.scss";
 
@@ -42,33 +44,25 @@ const Hero = ({ rulesRef }) => {
   return (
     <div className={style.hero} ref={homeRef}>
       <div className={style.left}>
-        <h1>
-          <Typewriter
-            onInit={(typewriter) => {
-              typewriter
-                .typeString(
-                  `<span style="color: var(--gdsc-blue-3-100);">G</span><span style="color: #eb4335;">D</span><span style="color: #fbbc12;">S</span><span style="color: #30a953;">C</span> Explore`
-                )
-                .start()
-                .callFunction(() => {});
-            }}
-          />
-        </h1>
-        <h2>Explore the Developers from the Northeast</h2>
-        <p className={`${style.fadeIn1} ${style.show1}`}>
-          <img src="/assets/images/clock.svg" alt="timer" />
-          From 6th April to 8th April
-        </p>
-        <div className={`${style.fadeIn2} ${style.show2}`}>
-          <Button primary>Register</Button>
-          <Button
-            onClick={() =>
-              rulesRef.current.scrollIntoView({ behavior: "smooth", block: "start" })
-            }
-          >
-            Rules and Regulations
-          </Button>
-        </div>
+        <Fade direction="up" triggerOnce damping={0.1}>
+          <h1>
+            <span style={{ color: "#547DBF" }}>G</span>
+            <span style={{ color: "#EB4335" }}>D</span>
+            <span style={{ color: "#FBBC12" }}>S</span>
+            <span style={{ color: "#30A953" }}>C</span>&nbsp;Explore
+          </h1>
+          <h2>Explore the Developers from the Northeast</h2>
+          <p>
+            <img src="/assets/images/clock.svg" alt="timer" />
+            From 6th April to 8th April
+          </p>
+          <div className={style.btn}>
+            <Button type="primary">Register</Button>
+            <Button type="secondary" rulesRef={rulesRef}>
+              Rules and Regulations
+            </Button>
+          </div>
+        </Fade>
       </div>
       <div className={style.right}>
         <Lottie options={exploreLottieOptions} height={450} width={450} />
