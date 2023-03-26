@@ -7,7 +7,7 @@ import styles from "./Sponsor.module.scss";
 const Sponsor = () => {
   return (
     <section className={styles.sponsor}>
-      <h1 className={styles["sponsor-heading"]}>Sponsor</h1>
+      <h1 className={styles["sponsor-heading"]}>Sponsors</h1>
       <div className={styles["sponsor-list"]}>
         {data.map((d) => (
           <SponsorCard key={d.id} logo={d.logo} name={d.name} />
