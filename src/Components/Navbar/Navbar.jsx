@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import Lottie from "react-lottie";
 import style from "./Navbar.module.scss";
 
-const Navbar = ({ aboutRef }) => {
+const Navbar = ({ aboutRef, teamRef }) => {
   const [animationData, setAnimationData] = useState();
 
   useEffect(() => {
@@ -68,10 +68,13 @@ const Navbar = ({ aboutRef }) => {
           </button>
         </li>
         <li>
-          <button>Sponsers</button>
-        </li>
-        <li>
-          <button>Speakers</button>
+          <button
+            onClick={() => {
+              teamRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+            }}
+          >
+            Team
+          </button>
         </li>
       </ul>
       <div
