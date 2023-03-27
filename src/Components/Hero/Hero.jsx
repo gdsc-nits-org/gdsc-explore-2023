@@ -1,9 +1,8 @@
 import { useState, useEffect, useRef } from "react";
+import Typewriter from "typewriter-effect";
 import Lottie from "react-lottie";
-// import Fade from "react-reveal/Fade";
-import { Fade } from "react-awesome-reveal";
-
 import Button from "../Button/Button";
+import Fade from "../Fade/Fade";
 import style from "./Hero.module.scss";
 
 const Hero = ({ rulesRef }) => {
@@ -44,21 +43,35 @@ const Hero = ({ rulesRef }) => {
   return (
     <div className={style.hero} ref={homeRef}>
       <div className={style.left}>
-        <Fade direction="up" triggerOnce damping={0.1}>
-          <h1>
-            <span style={{ color: "#547DBF" }}>G</span>
-            <span style={{ color: "#EB4335" }}>D</span>
-            <span style={{ color: "#FBBC12" }}>S</span>
-            <span style={{ color: "#30A953" }}>C</span>&nbsp;Explore
-          </h1>
+        <h1>
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString(
+                  `<span style="color: var(--gdsc-blue-3-100);">G</span><span style="color: #eb4335;">D</span><span style="color: #fbbc12;">S</span><span style="color: #30a953;">C</span> Explore`
+                )
+                .start();
+            }}
+            options={{
+              delay: 40,
+              cursor: null,
+            }}
+          />
+        </h1>
+        <Fade type="bottom">
           <h2>Explore the Developers from the Northeast</h2>
           <p>
             <img src="/assets/images/clock.svg" alt="timer" />
             From 6th April to 8th April
           </p>
           <div className={style.btn}>
-            <Button type="primary">Register</Button>
-            <Button type="secondary" rulesRef={rulesRef}>
+            <Button primary={1}>Register</Button>
+            <Button
+              rulesRef={rulesRef}
+              onClick={() => {
+                rulesRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+              }}
+            >
               Rules and Regulations
             </Button>
           </div>
@@ -73,7 +86,9 @@ const Hero = ({ rulesRef }) => {
           window.scrollTo({ top: homeRef.current.offsetHeight, behavior: "smooth" });
         }}
       >
-        <Lottie options={scrollLottieOptions} height={50} width={50} />
+        <Fade type="bottom">
+          <Lottie options={scrollLottieOptions} height={50} width={50} />
+        </Fade>
       </button>
     </div>
   );

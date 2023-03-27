@@ -1,9 +1,10 @@
 .hero {
-  height: calc(100vh - 4.375rem);
+  height: calc(100vh - 4rem);
   display: flex;
   justify-content: center;
   padding: 3vw 0;
   gap: 3vw;
+  // overflow: hidden;
   position: relative;
   .left {
     padding: 1rem;
@@ -11,21 +12,20 @@
       padding: 1rem;
       font-weight: 600;
       font-size: 4rem;
-      color: #343434;
+      color: var(--gdsc-dark-2-100);
       user-select: none;
     }
     h2 {
       font-weight: 400;
       font-size: 1.75rem;
       line-height: 3rem;
-      letter-spacing: 0.015625rem;
       padding: 1rem;
     }
     p {
       display: flex;
       align-items: center;
       padding: 2rem 1rem 4rem;
-      letter-spacing: 0.009721125rem;
+      letter-spacing: 1px;
       img {
         margin-right: 1.25rem;
       }
@@ -46,12 +46,8 @@
 @media (max-width: 1112px) {
   .hero {
     .left {
+      width: 70%;
       text-align: center;
-      padding: 10vh;
-      h1 {
-        display: flex;
-        justify-content: center;
-      }
       p {
         padding-bottom: 2rem;
         justify-content: center;
@@ -68,23 +64,18 @@
   }
 }
 
-@media (max-width: 602px) {
+@media (max-width: 702px) {
   .hero {
-    padding-top: 9vw;
+    margin-top: 15vw;
     .left {
+      width: 100%;
       h1 {
-        font-size: 3rem;
-      }
-      p {
-        padding-bottom: 2rem;
-        justify-content: center;
-      }
-      h2 {
-        text-align: center;
+        font-size: 10vw;
+        padding: 0;
       }
     }
     .scrollbtn {
-      bottom: 12vh;
+      bottom: 9rem;
     }
     .btn {
       display: flex;
@@ -97,9 +88,6 @@
   .hero {
     padding: 0;
     .left {
-      h1 {
-        padding: 0;
-      }
       p {
         padding: 0 1rem;
       }

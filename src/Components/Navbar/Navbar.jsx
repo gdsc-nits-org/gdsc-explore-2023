@@ -51,6 +51,7 @@ const Navbar = ({ aboutRef }) => {
                 top: 0,
                 behavior: "smooth",
               });
+              setIsClicked((prev) => !prev);
             }}
           >
             Home
@@ -59,7 +60,8 @@ const Navbar = ({ aboutRef }) => {
         <li>
           <button
             onClick={() => {
-              aboutRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+              aboutRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+              setIsClicked((prev) => !prev);
             }}
           >
             About
