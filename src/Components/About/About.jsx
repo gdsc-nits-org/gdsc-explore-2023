@@ -37,15 +37,13 @@ const About = ({ aboutRef }) => {
           <h1>ABOUT EXPLORE</h1>
         </div>
         <p className={style.content}>
-          GDSC Explore is the largest developers&#39; fest in the North Eastern India,
-          brought to you by GDSC AEC, GDSC NIT Silchar, GDSC IIIT Guwahati, GDSC NIT
-          Agartala. It will provide a platform for developers to engage and learn by
-          participating in various activities and workshops earning badges and
-          certificates along the way. GDSC Explore is the largest developers&#39; fest in
-          the North Eastern India, brought to you by GDSC AEC, GDSC NIT Silchar, GDSC IIIT
-          Guwahati, GDSC NIT Agartala. It will provide a platform for developers to engage
-          and learn by participating in various activities and workshops earning badges
-          and certificates along the way.
+          GDSC Explore was created in 2021 by multiple NorthEastern GDSCs in order to give
+          new and ambitious developers the chance to show off their skills in the
+          intensely competitive and exciting industry of development. Explore gives tech
+          enthusiasts from various backgrounds a place to connect and learn about one
+          another&apos;s perspectives on technology. Explore&apos;s intent has always been
+          to establish a setting in which various seminars, speaker sessions, and tech
+          presentations could emphasise the development culture of NorthEastern India.
         </p>
       </div>
       <div className={style.vector}>

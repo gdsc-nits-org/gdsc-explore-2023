@@ -57,10 +57,10 @@ const Hero = ({ rulesRef, registerRef, onLoad }) => {
             }}
           />
         </h1>
-        <h2>Explore the Developers from the Northeast</h2>
+        <h2>The Largest Student-led Hackathon In NorthEast India</h2>
         <p className={`${style.fadeIn1} ${style.show1}`}>
           <img src="/assets/images/clock.svg" alt="timer" />
-          From 6th April to 8th April
+          From 17th April to 20th April
         </p>
         <div className={`${style.fadeIn2} ${style.show2}`}>
           <Button
