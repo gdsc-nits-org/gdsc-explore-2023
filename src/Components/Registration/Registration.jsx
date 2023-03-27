@@ -1,8 +1,10 @@
 import styles from "./Registration.module.scss";
 import college from "../../data/registerLinks.json";
-const Registration = () => {
+import Button from "../Button/Button";
+
+const Registration = ({ registerRef }) => {
   return (
-    <div className={styles.main}>
+    <div className={styles.main} ref={registerRef}>
       <h1 className={styles.heading}>REGISTRATION</h1>
 
       <div className={styles.box}>
@@ -15,7 +17,11 @@ const Registration = () => {
             <div className={styles.tint}></div>
             <div className={styles.rg}>
               <p>{item.heading}</p>
-              {/* <button className={styles.registerBtn}> <a href={item.link}>REGISTER HERE</a></button> */}
+              <a href="https://www.google.com/" target="_blank">
+                <Button primary size="small">
+                  Register
+                </Button>
+              </a>
             </div>
           </div>
         ))}

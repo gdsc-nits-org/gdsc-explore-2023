@@ -8,6 +8,10 @@
     color: #355385;
     font-size: 2rem;
     font-weight: 600;
+    @media screen and (max-width: 650px) {
+      // font-size: 1.5rem;
+      margin-top: 2rem;
+    }
   }
 }
 .box {
@@ -39,12 +43,15 @@
     }
 
     @media screen and (max-width: 650px) {
-      width: 10rem;
-
+      width: 40%;
       aspect-ratio: 150/88.5;
-      border-radius: 1px;
+      border-radius: 0.2rem;
       .tint {
-        border-radius: 1px;
+        background-image: linear-gradient(
+          rgba(255, 255, 255, 0.226),
+          rgba(7, 7, 7, 0.283),
+          rgb(0, 0, 0)
+        );
       }
     }
   }
@@ -55,27 +62,14 @@
     color: white;
     position: relative;
     z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
 
     @media screen and (max-width: 650px) {
       font-size: 0.6rem;
     }
-
-    // .registerBtn {
-    //   margin: 1rem 0;
-    //   width: 7rem;
-    //   aspect-ratio: 97/37;
-    //   font-size: 0.7rem;
-    //   color: white;
-    //   border: none;
-    //   border-radius: 3px;
-    //   background-color: #0176fa;
-
-    //   a {
-    //     text-decoration: none;
-    //     &:visited {
-    //       color: white;
-    //     }
-    //   }
-    // }
   }
 }

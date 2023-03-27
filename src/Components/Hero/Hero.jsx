@@ -3,11 +3,13 @@ import Lottie from "react-lottie";
 import Typewriter from "typewriter-effect";
 import Button from "../Button/Button";
 import style from "./Hero.module.scss";
+import { useMediaQuery } from "../../Hooks";
 
-const Hero = ({ rulesRef }) => {
+const Hero = ({ rulesRef, registerRef }) => {
   const [exploreAnimationData, setExploreAnimationData] = useState();
   const [scrollAnimationData, setScrollAnimationData] = useState();
   const homeRef = useRef(null);
+  const isMobile = useMediaQuery("(max-width: 602px)");
 
   useEffect(() => {
     fetch("lotties/explore.json")
@@ -60,8 +62,17 @@ const Hero = ({ rulesRef }) => {
           From 6th April to 8th April
         </p>
         <div className={`${style.fadeIn2} ${style.show2}`}>
-          <Button primary>Register</Button>
           <Button
+            primary
+            size={isMobile ? "medium" : ""}
+            onClick={() =>
+              registerRef.current.scrollIntoView({ behavior: "smooth", block: "start" })
+            }
+          >
+            Register
+          </Button>
+          <Button
+            size={isMobile ? "medium" : ""}
             onClick={() =>
               rulesRef.current.scrollIntoView({ behavior: "smooth", block: "start" })
             }
