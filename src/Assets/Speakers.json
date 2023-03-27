@@ -3,36 +3,42 @@
     "id": 1,
     "name": "Nikita Gandhi",
     "desg": "Community Manager at Google Developers",
-    "img": "/assets/speakers/nikita-gandhi.png"
+    "img": "/assets/speakers/nikita-gandhi.png",
+    "socials": ["https://facebook.com","https://linkedin.com","https://instagram.com"]
   },
   {
     "id": 2,
     "name": "Nikita Gandhi",
     "desg": "Community Manager at Google Developers",
-    "img": "/assets/speakers/nikita-gandhi.png"
+    "img": "/assets/speakers/nikita-gandhi.png",
+    "socials": ["https://facebook.com","https://linkedin.com","https://instagram.com"]
   },
   {
     "id": 3,
     "name": "Nikita Gandhi",
     "desg": "Community Manager at Google Developers",
-    "img": "/assets/speakers/nikita-gandhi.png"
+    "img": "/assets/speakers/nikita-gandhi.png",
+    "socials": ["https://facebook.com","https://linkedin.com","https://instagram.com"]
   },
   {
     "id": 4,
     "name": "Nikita Gandhi",
     "desg": "Community Manager at Google Developers",
-    "img": "/assets/speakers/nikita-gandhi.png"
+    "img": "/assets/speakers/nikita-gandhi.png",
+    "socials": ["https://facebook.com","https://linkedin.com","https://instagram.com"]
   },
   {
     "id": 5,
     "name": "Nikita Gandhi",
     "desg": "Community Manager at Google Developers",
-    "img": "/assets/speakers/nikita-gandhi.png"
+    "img": "/assets/speakers/nikita-gandhi.png",
+    "socials": ["https://facebook.com","https://linkedin.com","https://instagram.com"]
   },
   {
     "id": 6,
     "name": "Nikita Gandhi",
     "desg": "Community Manager at Google Developers",
-    "img": "/assets/speakers/nikita-gandhi.png"
+    "img": "/assets/speakers/nikita-gandhi.png",
+    "socials": ["https://facebook.com","https://linkedin.com","https://instagram.com"]
   }
 ]

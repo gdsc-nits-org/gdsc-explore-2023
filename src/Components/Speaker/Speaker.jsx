@@ -11,7 +11,13 @@ const Speaker = () => {
       <h1 className={styles["speaker-heading"]}>Speakers</h1>
       <div className={styles["speaker-list"]}>
         {data.map((d) => (
-          <SpeakerCard key={d.id} img={d.img} name={d.name} desg={d.desg} />
+          <SpeakerCard
+            key={d.id}
+            img={d.img}
+            name={d.name}
+            desg={d.desg}
+            socials={d.socials}
+          />
         ))}
       </div>
     </section>
