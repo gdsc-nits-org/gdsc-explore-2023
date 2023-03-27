@@ -1,4 +1,4 @@
-import { AiOutlineTwitter, AiOutlineYoutube, AiOutlineInstagram } from "react-icons/ai";
+import { AiOutlineTwitter, AiFillYoutube, AiFillInstagram } from "react-icons/ai";
 import style from "./Footer.module.scss";
 
 const Footer = () => {
@@ -23,10 +23,10 @@ const Footer = () => {
             href="https://www.youtube.com/channel/UCMLgnvt5f-GPdpj-mwgvbmw"
             target="_blank"
           >
-            <AiOutlineYoutube id={style.youtube} />
+            <AiFillYoutube id={style.youtube} />
           </a>
           <a href="https://www.instagram.com/exploregdsc/" target="_blank">
-            <AiOutlineInstagram id={style.instagram} />
+            <AiFillInstagram id={style.instagram} />
           </a>
         </div>
       </div>

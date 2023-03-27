@@ -46,6 +46,10 @@
 
       a {
         text-decoration: none;
+        transition: all 0.3s;
+        &:hover {
+          scale: 1.1;
+        }
       }
 
       #twitter {
