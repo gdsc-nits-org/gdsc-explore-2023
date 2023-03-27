@@ -12,6 +12,7 @@ const SpeakerCard = ({ img, name, desg, socials }) => {
         <div className={styles["card-socials"]}>
           {socials.map((socialLink, idx) => (
             <a
+              key={idx}
               className={styles["social-icon"]}
               href={socialLink}
               target="_blank"
