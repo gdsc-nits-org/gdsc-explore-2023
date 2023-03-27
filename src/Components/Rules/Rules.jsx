@@ -11,7 +11,7 @@ const Rules = ({ rulesRef }) => {
         {rules.map(({ id, rule }) => {
           return (
             <div key={id} className={style.rule}>
-              {id}.{rule}
+              {id}. {rule}
             </div>
           );
         })}
