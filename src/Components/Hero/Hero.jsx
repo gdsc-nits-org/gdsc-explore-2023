@@ -5,7 +5,7 @@ import Button from "../Button/Button";
 import style from "./Hero.module.scss";
 import { useMediaQuery } from "../../Hooks";
 
-const Hero = ({ rulesRef, registerRef }) => {
+const Hero = ({ rulesRef, registerRef, onLoad }) => {
   const [exploreAnimationData, setExploreAnimationData] = useState();
   const [scrollAnimationData, setScrollAnimationData] = useState();
   const homeRef = useRef(null);
@@ -14,6 +14,7 @@ const Hero = ({ rulesRef, registerRef }) => {
   useEffect(() => {
     fetch("lotties/explore.json")
       .then((response) => {
+        onLoad(false);
         return response.json();
       })
       .then((data) => {
@@ -27,7 +28,7 @@ const Hero = ({ rulesRef, registerRef }) => {
       .then((data) => {
         setScrollAnimationData(data);
       });
-  }, []);
+  }, [onLoad]);
 
   const exploreLottieOptions = {
     loop: true,

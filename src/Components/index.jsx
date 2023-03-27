@@ -11,6 +11,7 @@ import Registration from "./Registration/Registration";
 import Hero from "./Hero/Hero";
 import GDSCTeam from "./GDSCTeam/GDSCTeam";
 import GDSCTeamCard from "./GDSCTeamCard/GDSCTeamCard";
+import Loader from "./Loader/Loader";
 
 export {
   Button,
@@ -26,4 +27,5 @@ export {
   Hero,
   GDSCTeam,
   GDSCTeamCard,
+  Loader,
 };

@@ -1,15 +1,18 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Home, Error } from "./Pages";
-import { Navbar, Footer } from "./Components";
+import { Navbar, Footer, Loader } from "./Components";
 
 const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
   const aboutRef = useRef(null);
   const rulesRef = useRef(null);
   const registerRef = useRef(null);
   const teamRef = useRef(null);
+
   return (
     <>
+      {isLoading && <Loader />}
       <Navbar aboutRef={aboutRef} teamRef={teamRef} />
       <Routes>
         <Route
@@ -20,10 +23,11 @@ const App = () => {
               rulesRef={rulesRef}
               registerRef={registerRef}
               teamRef={teamRef}
+              onLoad={setIsLoading}
             />
           }
         />
-        <Route path="*" element={<Error />} />
+        <Route path="*" element={<Error onLoad={setIsLoading} />} />
       </Routes>
       <Footer />
     </>
