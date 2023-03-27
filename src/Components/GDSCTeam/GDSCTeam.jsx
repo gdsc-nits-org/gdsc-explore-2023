@@ -7,7 +7,7 @@ import styles from "./GDSCTeam.module.scss";
 const Team = ({ teamRef }) => {
   return (
     <section className={styles.team} ref={teamRef}>
-      <h1 className={styles["team-heading"]}>GDSC Involved</h1>
+      <h1 className={styles["team-heading"]}>GDSCs Involved</h1>
       <div className={styles["team-list"]}>
         {data.map((d) => (
           <GDSCTeamCard key={d.name} img={d.img} name={d.name} link={d.link} />

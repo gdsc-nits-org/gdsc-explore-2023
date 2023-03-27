@@ -6,6 +6,7 @@ import { Navbar, Footer } from "./Components";
 const App = () => {
   const aboutRef = useRef(null);
   const rulesRef = useRef(null);
+  const registerRef = useRef(null);
   const teamRef = useRef(null);
   return (
     <>
@@ -13,7 +14,14 @@ const App = () => {
       <Routes>
         <Route
           path="/"
-          element={<Home aboutRef={aboutRef} rulesRef={rulesRef} teamRef={teamRef} />}
+          element={
+            <Home
+              aboutRef={aboutRef}
+              rulesRef={rulesRef}
+              registerRef={registerRef}
+              teamRef={teamRef}
+            />
+          }
         />
         <Route path="*" element={<Error />} />
       </Routes>
