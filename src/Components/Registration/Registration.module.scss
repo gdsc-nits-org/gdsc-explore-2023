@@ -22,7 +22,7 @@
   // grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   .card {
     border-radius: 6px;
-    width: 13rem;
+    width: 17%;
     position: relative;
     display: flex;
     justify-content: space-evenly;
@@ -32,6 +32,24 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
+    overflow: hidden;
+
+    .cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      scale: 1.2;
+      transition: 300ms;
+    }
+    &:hover {
+      .cover {
+        scale: 1;
+      }
+    }
 
     .tint {
       background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 0), rgb(0, 0, 0));
