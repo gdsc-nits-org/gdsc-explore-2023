@@ -67,9 +67,21 @@ const Hero = ({ rulesRef, registerRef }) => {
             From 6th April to 8th April
           </p>
           <div className={style.btn}>
-            <Button primary={1}>Register</Button>
+            <Button
+              primary={1}
+              size={isMobile ? "small" : "large"}
+              onClick={() => {
+                registerRef.current.scrollIntoView({
+                  behavior: "smooth",
+                  block: "center",
+                });
+              }}
+            >
+              Register
+            </Button>
             <Button
               rulesRef={rulesRef}
+              size={isMobile ? "small" : "large"}
               onClick={() => {
                 rulesRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
               }}
