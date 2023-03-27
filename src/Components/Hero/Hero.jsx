@@ -68,7 +68,7 @@ const Hero = ({ rulesRef, registerRef }) => {
           </p>
           <div className={style.btn}>
             <Button
-              primary={1}
+              primary
               size={isMobile ? "small" : "large"}
               onClick={() => {
                 registerRef.current.scrollIntoView({
