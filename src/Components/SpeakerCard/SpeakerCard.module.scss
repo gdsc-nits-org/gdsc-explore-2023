@@ -5,9 +5,18 @@
   display: inline-block;
   font-family: var(--gdsc-font-1);
   cursor: pointer;
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+  perspective-origin: center center;
+  transition: 0.3s;
+  transition-timing-function: ease-out;
+
   &:hover {
-    transform: scale(1.01);
+    transform: scale(1.08);
     transition: all 0.3s;
+    .card-img {
+      box-shadow: 0 0.25rem 1.25rem 0.25rem #00000099;
+    }
     .card-details {
       background-color: var(--gdsc-blue-4-100);
       color: var(--explore-white-1-100);
