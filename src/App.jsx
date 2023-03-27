@@ -7,14 +7,20 @@ const App = () => {
   const aboutRef = useRef(null);
   const rulesRef = useRef(null);
   const registerRef = useRef(null);
+  const teamRef = useRef(null);
   return (
     <>
-      <Navbar aboutRef={aboutRef} />
+      <Navbar aboutRef={aboutRef} teamRef={teamRef} />
       <Routes>
         <Route
           path="/"
           element={
-            <Home aboutRef={aboutRef} rulesRef={rulesRef} registerRef={registerRef} />
+            <Home
+              aboutRef={aboutRef}
+              rulesRef={rulesRef}
+              registerRef={registerRef}
+              teamRef={teamRef}
+            />
           }
         />
         <Route path="*" element={<Error />} />

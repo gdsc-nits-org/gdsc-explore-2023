@@ -9,6 +9,8 @@ import Speaker from "./Speaker/Speaker";
 import SpeakerCard from "./SpeakerCard/SpeakerCard";
 import Registration from "./Registration/Registration";
 import Hero from "./Hero/Hero";
+import GDSCTeam from "./GDSCTeam/GDSCTeam";
+import GDSCTeamCard from "./GDSCTeamCard/GDSCTeamCard";
 
 export {
   Button,
@@ -22,4 +24,6 @@ export {
   Speaker,
   SpeakerCard,
   Hero,
+  GDSCTeam,
+  GDSCTeamCard,
 };
