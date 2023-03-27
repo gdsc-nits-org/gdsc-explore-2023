@@ -1,0 +1,109 @@
+.navbar {
+  background: #ffffff;
+  box-shadow: 0 0.25rem 1.0625rem rgba(0, 0, 0, 0.05);
+  height: 4.375rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+
+  .brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    .img {
+      width: 5.5rem;
+    }
+    h2 {
+      padding-left: 0.5em;
+      font-weight: 600;
+      color: var(--gdsc-dark-3-100);
+    }
+  }
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+    right: 0;
+    i {
+      color: var(--gdsc-dark-3-100);
+    }
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      list-style: none;
+      line-height: 1.875rem;
+      margin: 0 1.25rem;
+      button {
+        background: none;
+        border: none;
+        color: var(--gdsc-dark-3-100);
+        font-size: 1.0625rem;
+        font-weight: 500;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      button:hover {
+        color: var(--gdsc-blue-1-100);
+        transition: 0.3s;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar {
+    .brand {
+      h2 {
+        display: none;
+      }
+    }
+    .hamburger {
+      display: block;
+      z-index: 50;
+      transition: 0.3s ease-in-out;
+    }
+    ul {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 8.125rem;
+      position: fixed;
+      width: 18.75rem;
+      top: 0;
+      right: -19.375rem;
+      height: 100vh;
+      background: #ffffff;
+      box-shadow: 1rem 0 5rem -0.5rem rgba(0, 0, 0, 0.05);
+      transition: 0.3s ease-in-out;
+      li {
+        margin-bottom: 2.5rem;
+      }
+    }
+    .activelinks {
+      right: 0;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding-top: 0.3125rem;
+    .brand {
+      .img {
+        width: 3.125rem;
+      }
+    }
+  }
+}

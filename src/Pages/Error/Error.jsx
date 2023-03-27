@@ -1,6 +1,11 @@
+import { useEffect } from "react";
 import style from "./Error.module.scss";
 
-const Error = () => {
+const Error = ({ onLoad }) => {
+  useEffect(() => {
+    onLoad(false);
+  });
+
   return <div className={style.error}>Error</div>;
 };
 
