@@ -4,11 +4,13 @@ import Lottie from "react-lottie";
 import Button from "../Button/Button";
 import Fade from "../Fade/Fade";
 import style from "./Hero.module.scss";
+import { useMediaQuery } from "../../Hooks";
 
-const Hero = ({ rulesRef }) => {
+const Hero = ({ rulesRef, registerRef }) => {
   const [exploreAnimationData, setExploreAnimationData] = useState();
   const [scrollAnimationData, setScrollAnimationData] = useState();
   const homeRef = useRef(null);
+  const isMobile = useMediaQuery("(max-width: 602px)");
 
   useEffect(() => {
     fetch("lotties/explore.json")

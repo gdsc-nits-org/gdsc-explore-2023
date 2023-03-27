@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "heading": "NIT Silchar Registrations",
+    "link": "/",
+    "cover": "https://scontent.fgau1-2.fna.fbcdn.net/v/t39.30808-6/292221123_484901086774981_2739493411264843463_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=e3f864&_nc_ohc=1L3HqrnrWAcAX-UIiFn&_nc_ht=scontent.fgau1-2.fna&oh=00_AfBvnEeF6u9rToNd1HDR6PSzz9H6FhXXoQUEnLgWRVJxww&oe=64235626"
+  },
+  {
+    "id": "2",
+    "heading": "JEC Registrations",
+    "link": "/",
+    "cover": "https://www.mystudyindia.com/storage/colleges/medias/kG25id_1616735463.webp"
+  },
+  {
+    "id": "3",
+    "heading": "AEC Registrations",
+    "link": "/",
+    "cover": "https://www.aec.ac.in/static/media/aec-banner-mobile.f6767c6c.jpg"
+  },
+  {
+    "id": "4",
+    "heading": "Guwahati University Resgitrations",
+    "link": "/",
+    "cover": "https://gumlet.assettype.com/pratidintime%2F2022-04%2F22a8fae6-c9d8-4e83-901c-d2a8b7cd6f3c%2F227926_gauhati_university_exam_1200x768.webp?format=auto"
+  },
+  {
+    "id": "5",
+    "heading": "Kaziranga University Registrations",
+    "link": "/",
+    "cover": "https://courses.ind.in/img/a/kaziranga-university-photos-1.jpg"
+  }
+]

@@ -9,6 +9,7 @@ import Sponsor from "./Sponsor/Sponsor";
 import SponsorCard from "./SponsorCard/SponsorCard";
 import Speaker from "./Speaker/Speaker";
 import SpeakerCard from "./SpeakerCard/SpeakerCard";
+import Registration from "./Registration/Registration";
 import GDSCTeam from "./GDSCTeam/GDSCTeam";
 import GDSCTeamCard from "./GDSCTeamCard/GDSCTeamCard";
 
@@ -20,6 +21,7 @@ export {
   Hero,
   Navbar,
   Rules,
+  Registration,
   Sponsor,
   SponsorCard,
   Speaker,
