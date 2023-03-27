@@ -70,7 +70,7 @@ const Hero = ({ rulesRef, registerRef, onLoad }) => {
           <div className={style.btn}>
             <Button
               primary
-              size={isMobile ? "small" : "large"}
+              size={isMobile ? "medium" : "large"}
               onClick={() => {
                 registerRef.current.scrollIntoView({
                   behavior: "smooth",
@@ -82,7 +82,7 @@ const Hero = ({ rulesRef, registerRef, onLoad }) => {
             </Button>
             <Button
               rulesRef={rulesRef}
-              size={isMobile ? "small" : "large"}
+              size={isMobile ? "medium" : "large"}
               onClick={() => {
                 rulesRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
               }}

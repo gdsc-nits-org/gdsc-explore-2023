@@ -91,3 +91,11 @@
     }
   }
 }
+
+@media (max-width: 650px) {
+  .main {
+    .heading {
+      font-size: var(--gdsc-explore-heading-size-mobile);
+    }
+  }
+}
