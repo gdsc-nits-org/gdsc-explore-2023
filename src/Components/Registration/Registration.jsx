@@ -9,11 +9,8 @@ const Registration = ({ registerRef }) => {
 
       <div className={styles.box}>
         {college.map((item) => (
-          <div
-            style={{ backgroundImage: `url(${item.cover})` }}
-            key={item.id}
-            className={styles.card}
-          >
+          <div key={item.id} className={styles.card}>
+            <img className={styles.cover} src={item.cover} alt="college" />
             <div className={styles.tint}></div>
             <div className={styles.rg}>
               <p>{item.heading}</p>
