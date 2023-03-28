@@ -5,7 +5,7 @@ import style from "./Rules.module.scss";
 import { useMediaQuery } from "../../Hooks";
 
 const Rules = ({ rulesRef }) => {
-  const [btn, setBtn] = useState(false);
+  const [btn, setBtn] = useState(true);
   const isMobile = useMediaQuery("(max-width: 602px)");
   useEffect(() => {
     setBtn(!isMobile);
@@ -34,9 +34,13 @@ const Rules = ({ rulesRef }) => {
               })
             : " "}
           <div className={style.btn}>
-            <button onClick={() => setBtn(!btn)}>
-              {btn ? "read less" : "read more..."}
-            </button>
+            {isMobile ? (
+              <button onClick={() => setBtn(!btn)}>
+                {btn ? "read less" : "read more..."}
+              </button>
+            ) : (
+              ""
+            )}
           </div>
         </div>
       </Fade>
