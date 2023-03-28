@@ -13,7 +13,7 @@ const Hero = ({ rulesRef, registerRef, onLoad }) => {
   const isMobile = useMediaQuery("(max-width: 602px)");
 
   useEffect(() => {
-    fetch("lotties/explore.json")
+    fetch("/lotties/explore.json")
       .then((response) => {
         onLoad(false);
         return response.json();
@@ -22,7 +22,7 @@ const Hero = ({ rulesRef, registerRef, onLoad }) => {
         setExploreAnimationData(data);
       });
 
-    fetch("lotties/scroll.json")
+    fetch("/lotties/scroll.json")
       .then((response) => {
         return response.json();
       })
