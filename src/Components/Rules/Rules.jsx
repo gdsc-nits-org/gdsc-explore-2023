@@ -1,10 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Fade from "../Fade/Fade";
 import rules from "../../Assets/Rules.json";
 import style from "./Rules.module.scss";
+import { useMediaQuery } from "../../Hooks";
 
 const Rules = ({ rulesRef }) => {
   const [btn, setBtn] = useState(false);
+  const isMobile = useMediaQuery("(max-width: 602px)");
+  useEffect(() => {
+    setBtn(!isMobile);
+  }, [isMobile]);
   return (
     <div className={style.container} ref={rulesRef}>
       <Fade type="bottom">
