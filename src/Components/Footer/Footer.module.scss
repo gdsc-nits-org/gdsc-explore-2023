@@ -1,5 +1,5 @@
 .footer {
-  height: 20rem;
+  height: var(--footer-height);
   background: linear-gradient(to right, var(--gdsc-blue-4-5), var(--gdsc-blue-4-20));
   display: flex;
   justify-content: center;
