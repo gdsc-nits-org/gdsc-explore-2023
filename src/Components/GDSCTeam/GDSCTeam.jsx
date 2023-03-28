@@ -8,7 +8,9 @@ const Team = ({ teamRef }) => {
   return (
     <section className={styles.team} ref={teamRef}>
       <Fade type="bottom">
-        <h1 className={styles["team-heading"]}>GDSC Involved</h1>
+        <h1 className={styles["team-heading"]}>
+          GDSC<span className={styles.small}>s</span> Involved
+        </h1>
       </Fade>
       <Fade type="bottom">
         <div className={styles["team-list"]}>

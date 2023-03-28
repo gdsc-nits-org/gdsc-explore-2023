@@ -1,6 +1,6 @@
 import style from "./Button.module.scss";
 
-const Button = ({ primary, children, onClick, size }) => {
+const Button = ({ primary, children, onClick, size, disabled }) => {
   const primaryClass = primary ? style.primary : "";
   const sizeClass = () => {
     return style[size];
@@ -12,6 +12,7 @@ const Button = ({ primary, children, onClick, size }) => {
       onClick={() => {
         if (onClick) onClick();
       }}
+      disabled={disabled}
     >
       {children}
     </button>

@@ -18,9 +18,9 @@ const Registration = ({ registerRef }) => {
               <div className={styles.tint}></div>
               <div className={styles.rg}>
                 <p>{item.heading}</p>
-                <a href="https://www.google.com/" target="_blank">
-                  <Button primary size="small">
-                    Register
+                <a href={item.link} target="_blank">
+                  <Button primary size="small" disabled={item.link === "#"}>
+                    {item.link === "#" ? "Coming Soon" : "Register"}
                   </Button>
                 </a>
               </div>
