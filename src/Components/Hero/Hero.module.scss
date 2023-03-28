@@ -1,11 +1,13 @@
 .hero {
-  height: calc(100vh - 4rem);
+  height: calc(100svh - 4rem);
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 3vw 0;
   gap: 3vw;
   position: relative;
   .left {
+    width: 50%;
     padding: 1rem;
     h1 {
       padding: 1rem;
@@ -23,7 +25,7 @@
     p {
       display: flex;
       align-items: center;
-      padding: 2rem 1rem 4rem;
+      padding: 2rem 1rem;
       letter-spacing: 1px;
       img {
         margin-right: 1.25rem;
@@ -39,7 +41,7 @@
     position: absolute;
     background: none;
     border: none;
-    bottom: 6rem;
+    bottom: 3.5rem;
     cursor: pointer;
   }
 }
@@ -66,16 +68,12 @@
 
 @media (max-width: 702px) {
   .hero {
-    margin-top: 15vw;
     .left {
       width: 100%;
       h1 {
         font-size: 10vw;
         padding: 0;
       }
-    }
-    .scrollbtn {
-      bottom: 8rem;
     }
     .btn {
       display: flex;
@@ -86,14 +84,38 @@
 }
 @media (max-width: 385px) {
   .hero {
-    padding: 0;
     .left {
       p {
         padding: 0 1rem;
       }
     }
+  }
+}
+
+//landscape mode
+@media (max-height: 570px) {
+  .hero {
+    height: 130vh;
     .scrollbtn {
-      bottom: 8rem;
+      bottom: 0;
     }
+  }
+}
+
+@media (max-height: 500px) {
+  .hero {
+    height: 150vh;
+  }
+}
+
+@media (max-height: 430px) {
+  .hero {
+    height: 175vh;
+  }
+}
+//iphone SE
+@media (max-height: 390px) {
+  .hero {
+    height: 187vh;
   }
 }
