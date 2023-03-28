@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Home, Error } from "./Pages";
 import { Navbar, Footer, Loader } from "./Components";
@@ -9,9 +9,6 @@ const App = () => {
   const rulesRef = useRef(null);
   const registerRef = useRef(null);
   const teamRef = useRef(null);
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   return (
     <>
       {isLoading && <Loader />}

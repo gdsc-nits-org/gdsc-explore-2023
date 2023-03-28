@@ -76,8 +76,7 @@ const Navbar = ({ aboutRef, teamRef }) => {
         <li>
           <button
             onClick={() => {
-              navigate("/");
-              teamRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+              teamRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
               setIsClicked((prev) => !prev);
             }}
           >
