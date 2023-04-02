@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import SponsorCard from "../SponsorCard/SponsorCard";
 
 import data from "../../Assets/Sponsors.json";
@@ -8,11 +9,18 @@ const Sponsor = () => {
   return (
     <section className={styles.sponsor}>
       <h1 className={styles["sponsor-heading"]}>Sponsors</h1>
-      <div className={styles["sponsor-list"]}>
-        {data.map((d) => (
-          <SponsorCard key={d.id} logo={d.logo} name={d.name} />
-        ))}
-      </div>
+      {data.map((tier, idx) => (
+        <Fragment key={idx}>
+          <div className={styles["sponsor-list"]}>
+            {tier.map((d) => (
+              <SponsorCard key={d.id} logo={d.logo} name={d.name} />
+            ))}
+          </div>
+          {idx !== data.length - 1 && (
+            <div key={idx} className={styles["tier-break"]}></div>
+          )}
+        </Fragment>
+      ))}
     </section>
   );
 };

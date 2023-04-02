@@ -9,7 +9,7 @@ const Navbar = ({ aboutRef, teamRef }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("lotties/explore-anime.json")
+    fetch("/lotties/explore-anime.json")
       .then((response) => {
         return response.json();
       })

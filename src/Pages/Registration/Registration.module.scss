@@ -1,0 +1,39 @@
+.nits-reg-page {
+  .nits-reg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3rem;
+
+    .heading {
+      font-size: var(--gdsc-explore-heading-size-desktop);
+      font-weight: 600;
+      color: var(--gdsc-blue-header);
+    }
+    .about {
+      margin: 2rem 0 0 0;
+    }
+
+    .devfolio-btn {
+      margin: 2rem 0 0 0;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+  .nits-reg-page {
+    .nits-reg {
+      margin: 2rem 1rem;
+      .heading {
+        font-size: var(--gdsc-explore-heading-size-mobile);
+      }
+    }
+  }
+}
