@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import { Home, Error } from "./Pages";
+import { Home, Error, Registration } from "./Pages";
 import { Navbar, Footer, Loader } from "./Components";
 
 const App = () => {
@@ -25,6 +25,10 @@ const App = () => {
               onLoad={setIsLoading}
             />
           }
+        />
+        <Route
+          path="/registration/nits"
+          element={<Registration onLoad={setIsLoading} />}
         />
         <Route path="*" element={<Error onLoad={setIsLoading} />} />
       </Routes>
