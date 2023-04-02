@@ -26,7 +26,10 @@ const App = () => {
             />
           }
         />
-        <Route path="/registration/nits" element={<Registration />} />
+        <Route
+          path="/registration/nits"
+          element={<Registration onLoad={setIsLoading} />}
+        />
         <Route path="*" element={<Error onLoad={setIsLoading} />} />
       </Routes>
       <Footer />

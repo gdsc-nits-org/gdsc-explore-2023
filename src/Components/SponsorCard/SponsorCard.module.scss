@@ -1,8 +1,10 @@
 .card {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 1rem 2rem;
-  padding: 2.5rem 0;
   width: 20%;
+  height: 8rem;
   box-shadow: 0.125rem 0.125rem 0.95rem var(--gdsc-shadow-1-80);
   border-radius: 0.5rem;
   cursor: pointer;
