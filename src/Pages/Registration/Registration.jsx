@@ -1,22 +1,11 @@
-import { useLayoutEffect, useEffect } from "react";
+import { useLayoutEffect } from "react";
 import style from "./Registration.module.scss";
-import { Sponsor } from "../../Components";
+import { Button, Sponsor } from "../../Components";
 
 const Registration = ({ onLoad }) => {
   useLayoutEffect(() => {
     onLoad(false);
   }, [onLoad]);
-
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://apply.devfolio.co/v2/sdk.js";
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
 
   return (
     <div className={style["nits-reg-page"]}>
@@ -29,14 +18,16 @@ const Registration = ({ onLoad }) => {
           start on 7th April. All participants are asked to follow the rules and
           guidelines mentioned here.
         </div>
-        <div className={style["devfolio-btn"]}>
-          <div
-            className="apply-button"
-            data-hackathon-slug="gdsc-explore-23-phase-1"
-            data-button-theme="light"
-            style={{}}
-          ></div>
-        </div>
+        <a
+          href="https://forms.gle/ptMaxNh3z9d12Ak49"
+          target="_blank"
+          rel="noreferrer"
+          className={style["devfolio-btn"]}
+        >
+          <Button primary="primary" size="medium">
+            Register
+          </Button>
+        </a>
       </div>
       <Sponsor />
     </div>
