@@ -1,11 +1,22 @@
-import { useLayoutEffect } from "react";
+import { useLayoutEffect, useEffect } from "react";
 import style from "./Registration.module.scss";
-import { Button, Sponsor } from "../../Components";
+import { Sponsor, Button } from "../../Components";
 
 const Registration = ({ onLoad }) => {
   useLayoutEffect(() => {
     onLoad(false);
   }, [onLoad]);
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <div className={style["nits-reg-page"]}>

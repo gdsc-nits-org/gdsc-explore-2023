@@ -1,9 +1,19 @@
 [
   [
     {
-      "id": 4,
+      "id": 1,
       "name": "TASKADE LOGO",
       "logo": "/assets/sponsors/taskade.png"
+    },
+    {
+      "id": 2,
+      "name": "DOT XYZ LOGO",
+      "logo": "/assets/sponsors/xyz.png"
+    },
+    {
+      "id": 3,
+      "name": "INTERVIEW BUDDY LOGO",
+      "logo": "/assets/sponsors/interviewbuddy.png"
     }
   ]
 ]
