@@ -1,33 +1,6 @@
 [
   [
     {
-      "id": 1,
-      "name": "DEVFOLIO LOGO",
-      "logo": "/assets/sponsors/devfolio.png"
-    },
-    {
-      "id": 2,
-      "name": "POLYGON LOGO",
-      "logo": "/assets/sponsors/polygon.png"
-    }
-  ],
-  [
-    {
-      "id": 1,
-      "name": "FILECOIN LOGO",
-      "logo": "/assets/sponsors/filecoin.png"
-    },
-    {
-      "id": 2,
-      "name": "REPLIT LOGO",
-      "logo": "/assets/sponsors/replit.png"
-    },
-    {
-      "id": 3,
-      "name": "SOLANA LOGO",
-      "logo": "/assets/sponsors/solana.png"
-    },
-    {
       "id": 4,
       "name": "TASKADE LOGO",
       "logo": "/assets/sponsors/taskade.png"
