@@ -65,7 +65,7 @@ const Hero = ({ rulesRef, registerRef, onLoad }) => {
           <h2>The Largest Student-led Hackathon In NorthEast India</h2>
           <p className={`${style.fadeIn1} ${style.show1}`}>
             <img src="/assets/images/clock.svg" alt="timer" />
-            From 17th April to 20th April
+            From 14th May to 17th May 2023
           </p>
           <div className={style.btn}>
             <Button
