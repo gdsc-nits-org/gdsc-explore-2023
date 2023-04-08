@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
+import { useNavigate, Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Lottie from "react-lottie";
 import style from "./Navbar.module.scss";
 
 const Navbar = ({ aboutRef, teamRef }) => {
   const [animationData, setAnimationData] = useState();
+  const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("lotties/explore-anime.json")
+    fetch("/lotties/explore-anime.json")
       .then((response) => {
         return response.json();
       })
@@ -39,7 +41,9 @@ const Navbar = ({ aboutRef, teamRef }) => {
     <nav className={style.navbar}>
       <div className={style.brand} onMouseEnter={handleHover} onMouseLeave={handleHover}>
         <div className={style.img}>
-          <Lottie options={defaultOptions} isStopped={stopped} />
+          <Link to="/">
+            <Lottie options={defaultOptions} isStopped={stopped} />
+          </Link>
         </div>
         <h2>GDSC Explore</h2>
       </div>
@@ -47,10 +51,12 @@ const Navbar = ({ aboutRef, teamRef }) => {
         <li>
           <button
             onClick={() => {
+              navigate("/");
               window.scrollTo({
                 top: 0,
                 behavior: "smooth",
               });
+              setIsClicked((prev) => !prev);
             }}
           >
             Home
@@ -59,7 +65,9 @@ const Navbar = ({ aboutRef, teamRef }) => {
         <li>
           <button
             onClick={() => {
-              aboutRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+              navigate("/");
+              aboutRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+              setIsClicked((prev) => !prev);
             }}
           >
             About
@@ -69,6 +77,7 @@ const Navbar = ({ aboutRef, teamRef }) => {
           <button
             onClick={() => {
               teamRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+              setIsClicked((prev) => !prev);
             }}
           >
             Team

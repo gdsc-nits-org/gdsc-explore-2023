@@ -1,7 +1,7 @@
 .navbar {
   background: #ffffff;
   box-shadow: 0 0.25rem 1.0625rem rgba(0, 0, 0, 0.05);
-  height: 4.375rem;
+  height: var(--navbar-height);
   width: 100%;
   display: flex;
   align-items: center;
@@ -9,7 +9,7 @@
   padding: 0 7%;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 20;
 
   .brand {
     display: flex;
@@ -22,7 +22,7 @@
     h2 {
       padding-left: 0.5em;
       font-weight: 600;
-      color: #505050;
+      color: var(--gdsc-dark-3-100);
     }
   }
   .hamburger {
@@ -34,7 +34,7 @@
     background: none;
     right: 0;
     i {
-      color: #333;
+      color: var(--gdsc-dark-3-100);
     }
   }
 
@@ -49,14 +49,14 @@
       button {
         background: none;
         border: none;
-        color: #505050;
+        color: var(--gdsc-dark-3-100);
         font-size: 1.0625rem;
         font-weight: 500;
         text-decoration: none;
         cursor: pointer;
       }
       button:hover {
-        color: #547dbf;
+        color: var(--gdsc-blue-1-100);
         transition: 0.3s;
       }
     }
@@ -72,7 +72,7 @@
     }
     .hamburger {
       display: block;
-      z-index: 100;
+      z-index: 50;
       transition: 0.3s ease-in-out;
     }
     ul {
@@ -86,7 +86,7 @@
       right: -19.375rem;
       height: 100vh;
       background: #ffffff;
-      box-shadow: 1.0625rem 0 0.5rem -0.5rem rgba(0, 0, 0, 0.05);
+      box-shadow: 1rem 0 5rem -0.5rem rgba(0, 0, 0, 0.05);
       transition: 0.3s ease-in-out;
       li {
         margin-bottom: 2.5rem;

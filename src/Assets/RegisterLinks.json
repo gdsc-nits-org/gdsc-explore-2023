@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "heading": "NIT Silchar Registrations",
+    "link": "/registration/nits",
+    "cover": "https://res.cloudinary.com/dgegjgvsg/image/upload/v1680101068/GDSC%20Explore%202023/nits_wbrpgt.jpg"
+  },
+  {
+    "id": "2",
+    "heading": "JEC Registrations",
+    "link": "#",
+    "cover": "https://res.cloudinary.com/dgegjgvsg/image/upload/v1680101069/GDSC%20Explore%202023/jec_fyqoll.webp"
+  },
+  {
+    "id": "3",
+    "heading": "AEC Registrations",
+    "link": "#",
+    "cover": "https://res.cloudinary.com/dgegjgvsg/image/upload/v1680101071/GDSC%20Explore%202023/aec_osrohx.jpg"
+  },
+  {
+    "id": "4",
+    "heading": "Gauhati University Registrations",
+    "link": "https://docs.google.com/forms/d/e/1FAIpQLSevgKlpltyNzvyVP0NTLE-xrpA_9ayFc-sISEtmF1_UBvus4A/viewform?usp=sf_link",
+    "cover": "https://res.cloudinary.com/dgegjgvsg/image/upload/v1680101068/GDSC%20Explore%202023/gu_nfnnrq.avif"
+  },
+  {
+    "id": "5",
+    "heading": "Kaziranga University Registrations",
+    "link": "https://forms.gle/BJuj1vn918LGvVE18",
+    "cover": "https://res.cloudinary.com/dgegjgvsg/image/upload/v1680101068/GDSC%20Explore%202023/aku_lbehc6.jpg"
+  }
+]

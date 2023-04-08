@@ -1,6 +1,6 @@
 .team {
   height: fit-content;
-  padding: 3vw 5vw;
+  padding: 5vw 5vw;
   .team-heading {
     font-family: var(--gdsc-font-1);
     font-size: var(--gdsc-explore-heading-size-desktop);
@@ -8,7 +8,10 @@
     text-align: center;
     text-transform: uppercase;
     color: var(--gdsc-blue-header);
-    margin: 0 0 3rem 0;
+    margin: 0 0 1rem 0;
+    .small {
+      text-transform: lowercase;
+    }
   }
   .team-list {
     display: flex;
