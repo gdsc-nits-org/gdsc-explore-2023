@@ -33,41 +33,43 @@ const SpeakerCard = ({ img, name, desg, socials }) => {
   };
 
   return (
-    <div
-      className={styles.card}
-      onMouseMove={(e) => handleHover(e)}
-      onMouseOut={handleMouseOut}
-      onMouseEnter={handleMouseEnter}
-      onBlur={handleMouseOut}
-      style={{
-        transform: ` 
-        scale(${scale})
-        rotate3d(
-          ${tilt.y / 100},
-          ${-tilt.x / 100},
-          0,
-          ${tilt.dist === 0 ? 0 : Math.log(tilt.dist) * 2}deg
-        )`,
-      }}
-    >
-      <div className={styles["card-img-wrapper"]}>
-        <img className={styles["card-img"]} src={img} alt={name} />
-      </div>
-      <div className={styles["card-details"]}>
-        <span className={styles["card-name"]}>{name}</span>
-        <span className={styles["card-desg"]}>{desg}</span>
-        <div className={styles["card-socials"]}>
-          {socials.map((socialLink, idx) => (
-            <a
-              key={idx}
-              className={styles["social-icon"]}
-              href={socialLink}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {socialIcons[idx]}
-            </a>
-          ))}
+    <div className={styles["card-wrapper"]}>
+      <div
+        className={styles.card}
+        onMouseMove={(e) => handleHover(e)}
+        onMouseOut={handleMouseOut}
+        onMouseEnter={handleMouseEnter}
+        onBlur={handleMouseOut}
+        style={{
+          transform: ` 
+          scale(${scale})
+          rotate3d(
+            ${tilt.y / 100},
+            ${-tilt.x / 100},
+            0,
+            ${tilt.dist === 0 ? 0 : Math.log(tilt.dist) * 2}deg
+          )`,
+        }}
+      >
+        <div className={styles["card-img-wrapper"]}>
+          <img className={styles["card-img"]} src={img} alt={name} />
+        </div>
+        <div className={styles["card-details"]}>
+          <span className={styles["card-name"]}>{name}</span>
+          <span className={styles["card-desg"]}>{desg}</span>
+          <div className={styles["card-socials"]}>
+            {socials.map((socialLink, idx) => (
+              <a
+                key={idx}
+                className={styles["social-icon"]}
+                href={socialLink}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {socialIcons[idx]}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </div>

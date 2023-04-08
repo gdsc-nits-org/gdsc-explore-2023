@@ -1,3 +1,9 @@
+.card-wrapper {
+  perspective: 70rem;
+  perspective-origin: center center;
+  transform-style: preserve-3d;
+}
+
 .card {
   width: 20rem;
   margin: 3rem 2rem;
