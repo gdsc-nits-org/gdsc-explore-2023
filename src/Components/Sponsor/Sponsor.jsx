@@ -1,14 +1,12 @@
 import { Fragment } from "react";
 import SponsorCard from "../SponsorCard/SponsorCard";
 
-import data from "../../Assets/Sponsors.json";
-
 import styles from "./Sponsor.module.scss";
 
-const Sponsor = () => {
+const Sponsor = ({ title, data }) => {
   return (
     <section className={styles.sponsor}>
-      <h1 className={styles["sponsor-heading"]}>Sponsors</h1>
+      <h1 className={styles["sponsor-heading"]}>{title || "Sponsors"}</h1>
       {data.map((tier, idx) => (
         <Fragment key={idx}>
           <div className={styles["sponsor-list"]}>
