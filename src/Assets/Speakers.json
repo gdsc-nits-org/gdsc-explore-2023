@@ -1,38 +1,35 @@
 [
   {
     "id": 1,
-    "name": "Nikita Gandhi",
-    "desg": "Community Manager at Google Developers",
-    "img": "/assets/speakers/nikita-gandhi.png"
+    "name": "ASHVIJA VIJAYENDRA",
+    "desg": "Director & Founder, Pink Tech Solution, GDG Guwahati Organizer",
+    "img": "/assets/speakers/ashvijaVijayendra.jpeg",
+    "socials": [
+      "",
+      "https://www.linkedin.com/in/ashvija-vijayendra/",
+      "https://twitter.com/AshviThoughts"
+    ]
   },
   {
     "id": 2,
-    "name": "Nikita Gandhi",
-    "desg": "Community Manager at Google Developers",
-    "img": "/assets/speakers/nikita-gandhi.png"
+    "name": "ANUBHAV SINGH",
+    "desg": "Co-Founder, Dynopii Google Developer Expert, GCP",
+    "img": "/assets/speakers/anubhavSingh.jpeg",
+    "socials": [
+      "",
+      "https://www.linkedin.com/in/xprilion/",
+      "https://twitter.com/xprilion"
+    ]
   },
   {
     "id": 3,
-    "name": "Nikita Gandhi",
-    "desg": "Community Manager at Google Developers",
-    "img": "/assets/speakers/nikita-gandhi.png"
-  },
-  {
-    "id": 4,
-    "name": "Nikita Gandhi",
-    "desg": "Community Manager at Google Developers",
-    "img": "/assets/speakers/nikita-gandhi.png"
-  },
-  {
-    "id": 5,
-    "name": "Nikita Gandhi",
-    "desg": "Community Manager at Google Developers",
-    "img": "/assets/speakers/nikita-gandhi.png"
-  },
-  {
-    "id": 6,
-    "name": "Nikita Gandhi",
-    "desg": "Community Manager at Google Developers",
-    "img": "/assets/speakers/nikita-gandhi.png"
+    "name": "ABHINAV KUMAR JHA",
+    "desg": "Associate Tech Lead, Data Scientist, Publicis Groupe",
+    "img": "/assets/speakers/abhinavKumarJha.jpeg",
+    "socials": [
+      "",
+      "https://www.linkedin.com/in/abhinav-kumar-jha-0948bb11b/",
+      "https://twitter.com/Abhinavkrjha10"
+    ]
   }
 ]

@@ -2,6 +2,8 @@ import { useLayoutEffect, useEffect } from "react";
 import style from "./Registration.module.scss";
 import { Sponsor, Button } from "../../Components";
 
+import data from "../../Assets/Sponsors.json";
+
 const Registration = ({ onLoad }) => {
   useLayoutEffect(() => {
     onLoad(false);
@@ -67,7 +69,7 @@ const Registration = ({ onLoad }) => {
           ></div>
         </div>
       </div>
-      <Sponsor />
+      <Sponsor data={data} />
     </div>
   );
 };
