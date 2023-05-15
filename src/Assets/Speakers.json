@@ -4,20 +4,32 @@
     "name": "ASHVIJA VIJAYENDRA",
     "desg": "Director & Founder, Pink Tech Solution, GDG Guwahati Organizer",
     "img": "/assets/speakers/ashvijaVijayendra.jpeg",
-    "socials": ["", "https://www.linkedin.com/in/ashvija-vijayendra/", "https://twitter.com/AshviThoughts"]
+    "socials": [
+      "",
+      "https://www.linkedin.com/in/ashvija-vijayendra/",
+      "https://twitter.com/AshviThoughts"
+    ]
   },
   {
     "id": 2,
     "name": "ANUBHAV SINGH",
     "desg": "Co-Founder, Dynopii Google Developer Expert, GCP",
     "img": "/assets/speakers/anubhavSingh.jpeg",
-    "socials": ["", "https://www.linkedin.com/in/xprilion/", "https://twitter.com/xprilion"]
+    "socials": [
+      "",
+      "https://www.linkedin.com/in/xprilion/",
+      "https://twitter.com/xprilion"
+    ]
   },
   {
     "id": 3,
     "name": "ABHINAV KUMAR JHA",
     "desg": "Associate Tech Lead, Data Scientist, Publicis Groupe",
     "img": "/assets/speakers/abhinavKumarJha.jpeg",
-    "socials": ["", "https://www.linkedin.com/in/abhinav-kumar-jha-0948bb11b/", "https://twitter.com/Abhinavkrjha10"]
+    "socials": [
+      "",
+      "https://www.linkedin.com/in/abhinav-kumar-jha-0948bb11b/",
+      "https://twitter.com/Abhinavkrjha10"
+    ]
   }
 ]

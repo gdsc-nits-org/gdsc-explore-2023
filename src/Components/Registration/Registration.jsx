@@ -19,8 +19,8 @@ const Registration = ({ registerRef }) => {
               <div className={styles.rg}>
                 <p>{item.heading}</p>
                 <a href={item.link} target="_blank">
-                  <Button primary size="small" disabled={item.link === "#"}>
-                    {item.link === "#" ? "Coming Soon" : "Register"}
+                  <Button primary size="small" disabled>
+                    {item.link === "#" ? "Closed" : "Closed"}
                   </Button>
                 </a>
               </div>
