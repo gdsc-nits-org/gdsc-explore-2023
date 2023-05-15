@@ -3,9 +3,12 @@ import { BsFacebook, BsLinkedin, BsTwitter } from "react-icons/bs";
 import styles from "./SpeakerCard.module.scss";
 
 const SpeakerCard = ({ img, name, desg, socials }) => {
-  const socialIcons = [<BsFacebook />, <BsLinkedin />, <BsTwitter />];
+  let socialIcons = [<BsFacebook />, <BsLinkedin />, <BsTwitter />];
   const [tilt, setTilt] = useState({ x: 0, y: 0, dist: 0 });
   const [scale, setScale] = useState(1);
+
+  const filteredSocials = socials.filter((link) => link !== "");
+  socialIcons = socialIcons.filter((icon, idx) => socials[idx] !== "");
 
   const handleMouseEnter = () => {
     setScale(1.07);
@@ -58,7 +61,7 @@ const SpeakerCard = ({ img, name, desg, socials }) => {
           <span className={styles["card-name"]}>{name}</span>
           <span className={styles["card-desg"]}>{desg}</span>
           <div className={styles["card-socials"]}>
-            {socials.map((socialLink, idx) => (
+            {filteredSocials.map((socialLink, idx) => (
               <a
                 key={idx}
                 className={styles["social-icon"]}
