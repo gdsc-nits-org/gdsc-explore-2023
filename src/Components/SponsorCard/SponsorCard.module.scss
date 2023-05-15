@@ -4,7 +4,7 @@
   align-items: center;
   margin: 1rem 2rem;
   width: 20%;
-  height: 8rem;
+  height: 10rem;
   box-shadow: 0.125rem 0.125rem 0.95rem var(--gdsc-shadow-1-80);
   border-radius: 0.5rem;
   cursor: pointer;
@@ -29,6 +29,7 @@
 @media (max-width: 768px) {
   .card {
     margin: 0.5rem 1rem;
+    height: 8rem;
   }
 }
 
